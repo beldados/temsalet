@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="am">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temsalet - Ethiopian Proverbs</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-amber-50/30 text-stone-800 min-h-screen flex flex-col justify-between font-sans">
+
+  <!-- Header -->
+  <header class="border-b border-amber-100 bg-white/80 backdrop-blur sticky top-0 z-50">
+    <div class="max-w-4xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-amber-700 tracking-wide">ተምሳሌት <span
+          class="text-stone-500 font-normal text-lg">| Temsalet</span></h1>
+      <a href="https://github.com/beldados/temsalet" target="_blank"
+        class="text-sm bg-stone-800 hover:bg-stone-700 text-white px-3 py-1.5 rounded-md transition">GitHub</a>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-4xl mx-auto px-4 py-8 w-full flex-grow space-y-8">
+
+    <!-- Intro -->
+    <div class="text-center space-y-2">
+      <h2 class="text-3xl font-extrabold text-stone-950">የአበው ምክርና ጥበብ</h2>
+      <p class="text-stone-600 max-w-xl mx-auto">Explore, search, and preserve the rich wisdom embedded in traditional
+        Ethiopian proverbs.</p>
+    </div>
+
+    <!-- Proverb of the Day Card -->
+    <div class="bg-white border border-amber-200/60 rounded-xl p-6 shadow-sm relative overflow-hidden">
+      <div class="absolute top-0 left-0 h-1 w-full bg-gradient-to-r from-amber-500 to-yellow-500"></div>
+      <span class="text-xs font-semibold tracking-wider text-amber-600 uppercase">የዕለቱ ምሳሌ • Proverb of the Day</span>
+      <div class="mt-4 space-y-3">
+        <p id="daily-amharic" class="text-2xl font-bold text-stone-900">ጭነት...</p>
+        <p id="daily-english" class="text-lg italic text-stone-600">Loading...</p>
+        <div class="pt-4 border-t border-stone-100 space-y-1">
+          <p class="text-sm text-stone-500"><strong class="text-stone-700">ትርጉም:</strong> <span
+              id="daily-meaning-am"></span></p>
+          <p class="text-sm text-stone-500"><strong class="text-stone-700">Meaning:</strong> <span
+              id="daily-meaning-en"></span></p>
+        </div>
+      </div>
+      <button onclick="getRandomProverb()"
+        class="mt-4 text-xs bg-amber-100 hover:bg-amber-200 text-amber-800 px-3 py-1.5 rounded-md transition font-medium">ቀይር
+        • New Proverb</button>
+    </div>
+
+    <!-- Search and Filter Section -->
+    <div class="space-y-4">
+      <!-- Search Input -->
+      <input type="text" id="search-input" oninput="filterProverbs()"
+        placeholder="Search proverbs, translations, or categories..."
+        class="w-full px-4 py-3 border border-stone-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500 bg-white">
+
+      <!-- Fidel Alphabet Buttons -->
+      <div class="flex flex-wrap gap-1.5 justify-center py-2" id="alphabet-filters">
+        <!-- Will be dynamically generated -->
+      </div>
+    </div>
+
+    <!-- Proverbs Grid List -->
+    <div id="proverbs-grid" class="grid gap-4 md:grid-cols-2">
+      <!-- Dynamically populated -->
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-stone-200/60 bg-stone-100 py-6 text-center text-sm text-stone-500">
+    <p>© 2026 Temsalet Project. Built for Ethiopian Wisdom preservation.</p>
+  </footer>
+
+  <!-- Frontend Logic -->
+  <script>
+    let proverbsList = [];
+
+    // Load JSON data asynchronously
+    async function fetchProverbs() {
+      try {
+        const response = await fetch('./proverbs.json');
+        proverbsList = await response.json();
+
+        // Initialize Views
+        getRandomProverb();
+        generateAlphabetFilters();
+        displayProverbs(proverbsList);
+      } catch (error) {
+        console.error("Error loading proverbs dataset:", error);
+      }
+    }
+
+    // Display Proverb of the Day
+    function getRandomProverb() {
+      if (proverbsList.length === 0) return;
+      const randomItem = proverbsList[Math.floor(Math.random() * proverbsList.length)];
+      document.getElementById('daily-amharic').innerText = randomItem.proverb_amharic;
+      document.getElementById('daily-english').innerText = randomItem.proverb_english;
+      document.getElementById('daily-meaning-am').innerText = randomItem.meaning_amharic;
+      document.getElementById('daily-meaning-en').innerText = randomItem.meaning_english;
+    }
+
+    // Dynamically build Alphabet filter buttons
+    function generateAlphabetFilters() {
+      // Extract the first character from Amharic proverbs
+      const letters = [...new Set(proverbsList.map(p => p.proverb_amharic.trim().charAt(0)))].sort();
+      const container = document.getElementById('alphabet-filters');
+      container.innerHTML = `<button onclick="displayProverbs(proverbsList)" class="px-3 py-1 text-sm bg-stone-200 hover:bg-stone-300 rounded transition font-medium">ሁሉም (All)</button>`;
+
+      letters.forEach(letter => {
+        const btn = document.createElement('button');
+        btn.className = "px-3 py-1 text-sm bg-amber-100 hover:bg-amber-200 text-amber-900 rounded transition font-semibold";
+        btn.innerText = letter;
+        btn.onclick = () => filterByLetter(letter);
+        container.appendChild(btn);
+      });
+    }
+
+    // Filter proverbs list by starting character
+    function filterByLetter(letter) {
+      const filtered = proverbsList.filter(p => p.proverb_amharic.trim().startsWith(letter));
+      displayProverbs(filtered);
+    }
+
+    // Filter proverbs list via search input
+    function filterProverbs() {
+      const query = document.getElementById('search-input').value.toLowerCase();
+      const filtered = proverbsList.filter(p =>
+        p.proverb_amharic.toLowerCase().includes(query) ||
+        p.proverb_english.toLowerCase().includes(query) ||
+        (p.category && p.category.toLowerCase().includes(query))
+      );
+      displayProverbs(filtered);
+    }
+
+    // Render proverbs into the grid list
+    function displayProverbs(items) {
+      const grid = document.getElementById('proverbs-grid');
+      grid.innerHTML = '';
+
+      if (items.length === 0) {
+        grid.innerHTML = `<p class="col-span-full text-center text-stone-400 py-8">ምንም ምሳሌ አልተገኘም (No matching proverbs found)</p>`;
+        return;
+      }
+
+      items.forEach(item => {
+        const card = document.createElement('div');
+        card.className = "bg-white border border-stone-200/80 rounded-lg p-5 space-y-3 shadow-sm hover:border-amber-300 transition duration-150";
+        card.innerHTML = `
+                    <div class="flex justify-between items-start">
+                        <span class="text-[10px] bg-stone-100 text-stone-600 px-2 py-0.5 rounded uppercase font-bold tracking-wider">${item.category || 'Wisdom'}</span>
+                    </div>
+                    <p class="text-xl font-bold text-stone-900">${item.proverb_amharic}</p>
+                    <p class="text-md italic text-stone-600">${item.proverb_english}</p>
+                    <div class="pt-2 border-t border-stone-50 space-y-1 text-xs text-stone-500">
+                        <p><strong>ትርጉም:</strong> ${item.meaning_amharic}</p>
+                        <p><strong>Meaning:</strong> ${item.meaning_english}</p>
+                    </div>
+                `;
+        grid.appendChild(card);
+      });
+    }
+
+    // Run fetch on mount
+    window.onload = fetchProverbs;
+  </script>
+</body>
+
+</html>
