@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "temsalet"
+version = "0.1.0"
+description = "A Python library and API for accessing traditional Ethiopian proverbs."
+readme = "README.md"
+authors = [
+    { name = "beldados" }
+]
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "fastapi",
+    "uvicorn"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"temsalet" = ["data/*.json"]
+
+[project.scripts]
+temsalet-server = "temsalet.main:run"

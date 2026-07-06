@@ -1,23 +1,17 @@
-.
 # Temsalet
 
-Temsalet is an app that aims to preserve and promote the rich tradition of Ethiopia. The app is designed to unpack the wisdom and knowledge embedded in Ethiopian proverbs, making it accessible to a wider audience.
+Temsalet is an open-source project that aims to preserve and promote the rich traditions of Ethiopia. The library and API are designed to unpack the wisdom and knowledge embedded in Ethiopian proverbs, making them accessible to a wider audience of developers and creators.
 
 ## Features
 
-- **Proverb of the Day**: Each day, a new proverb is featured on the app, along with its meaning and origin.
-- **Search**: Users can search for specific proverbs or topics.
-- **Save and Share**: Users can save their favorite proverbs and share them with others.
-- **Language Support**: The app supports both English and Amharic languages.
+- **Proverb of the Day**: Retrieve a random proverb, along with its meaning, origin, and category.
+- **Search**: Search for specific proverbs by keyword, topic, or language.
+- **Language Support**: Full support for both English and Amharic languages.
+- **Offline & API Access**: Use it as a direct offline Python module, or run a local FastAPI web server.
 
 ## Installation
 
-To install Temsalet, simply download the app from the App Store or Google Play Store.
+You can install Temsalet directly via pip:
 
-## Contributing
-
-We welcome contributions from the community. If you have a proverb to share or would like to help with the app's development, please get in touch.
-
-## License
-
-Temsalet is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+```bash
+pip install temsalet
