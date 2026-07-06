@@ -21,9 +21,6 @@ async def read_by_fidel(
     skip: int = Query(0, ge=0, description="Number of records to skip"),
     limit: int = Query(20, ge=1, le=100, description="Max number of records to return")
 ):
-    """
-    Get proverbs starting with a specific Amharic character (Fidel).
-    """
     results = load_proverbs_by_fidel(letter, skip=skip, limit=limit)
     if not results and skip == 0:
         raise HTTPException(

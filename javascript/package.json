@@ -1,0 +1,23 @@
+{
+  "name": "temsalet",
+  "version": "0.0.1",
+  "description": "A JavaScript library to query and search traditional Ethiopian proverbs offline.",
+  "main": "index.js",
+  "keywords": [
+    "ethiopia",
+    "proverbs",
+    "amharic",
+    "geez",
+    "temsalet"
+  ],
+  "author": "beldados",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beldados/temsalet.git"
+  },
+  "bugs": {
+    "url": "https://github.com/beldados/temsalet/issues"
+  },
+  "homepage": "https://github.com/beldados/temsalet#readme"
+}

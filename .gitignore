@@ -44,3 +44,19 @@ env*/
 # Operating System files
 .DS_Store
 Thumbs.db
+
+
+# Python build artifacts
+**/__pycache__/
+**/*.pyc
+python/build/
+python/dist/
+python/*.egg-info/
+
+# Node.js artifacts
+javascript/node_modules/
+
+# OS and Local files
+.DS_Store
+Thumbs.db
+.vscode/
