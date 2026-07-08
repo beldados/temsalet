@@ -1,0 +1,101 @@
+[
+  {
+    "id": "መ_1",
+    "proverb_amharic": "ምን ያመጣ ድሀ ምን ያሳሳ ውሃ",
+    "proverb_english": "What can a poor man bring? What can water thin?",
+    "meaning_amharic": "አንዳንድ ነገሮች ተፈጥሯዊ ባህሪያቸው የማይለወጥ መሆኑን ወይም አቅም የሌለው ሰው ተጽዕኖ ማሳደር እንደማይችል ይገልጻል።",
+    "meaning_english": "Certain things have inherent natures that don't change, or it implies that someone without resources cannot bring much to the table.",
+    "origin": "Traditional",
+    "category": "Wisdom"
+  },
+  {
+    "id": "መ_2",
+    "proverb_amharic": "ምን ቢርሱ እንደሳምን አይርሱ",
+    "proverb_english": "No matter how much you forget, do not forget the week.",
+    "meaning_amharic": "በህይወት ውስጥ ብዙ ነገሮች ቢረሱም፤ መሰረታዊ የሆኑ ግዴታዎችንና የጊዜ ዑደቶችን አለመዘንጋት እንደሚገባ ያስገነዝባል።",
+    "meaning_english": "Even if life is distracting, one should never forget fundamental duties or the basic rhythms of life.",
+    "origin": "Traditional",
+    "category": "Discipline"
+  },
+  {
+    "id": "መ_3",
+    "proverb_amharic": "ምንም ቢጠም መንገድ ምንም ቢከፋ ዘመድ",
+    "proverb_english": "No matter how crooked the road, no matter how bad the relative.",
+    "meaning_amharic": "መንገድ ቢጠማም መድረሻው አይቀርም፤ ዘመድም ቢከፋ መተካቻ ስለሌለው መታገስና መቀበል እንደሚገባ ያሳያል።",
+    "meaning_english": "Just as a winding road is still the way to your destination, family remains family regardless of their flaws; you must stick with them.",
+    "origin": "Traditional",
+    "category": "Family"
+  },
+  {
+    "id": "መ_4",
+    "proverb_amharic": "ምን ቢፋቀሩ አብረው አይቀበሩ",
+    "proverb_english": "No matter how much they love each other, they are not buried together.",
+    "meaning_amharic": "ሰው ምንም ያህል ቢዋደድ መጨረሻ ላይ ሁሉም የራሱ የሆነ ኃላፊነትና የራሱ መንገድ እንዳለው ይገልጻል።",
+    "meaning_english": "Despite the depth of love and companionship, everyone ultimately faces their destiny and final journey individually.",
+    "origin": "Traditional",
+    "category": "Life"
+  },
+  {
+    "id": "መ_5",
+    "proverb_amharic": "ምከረው ምከረው እምቢ ሲል መከራ ይምከረው",
+    "proverb_english": "Advise him, advise him; if he refuses, let trouble advise him.",
+    "meaning_amharic": "አንድ ሰው በምክር ሊመለስ ካልቻለ፤ በሚገጥመው ችግርና መከራ እንዲማር መተው እንደሚሻል ይገልጻል።",
+    "meaning_english": "If someone refuses to listen to good advice, they will eventually learn the hard way through the consequences of their actions.",
+    "origin": "Traditional",
+    "category": "Wisdom"
+  },
+  {
+    "id": "መ_6",
+    "proverb_amharic": "መሄጃ የሌለው መውጫውን ያበዛል",
+    "proverb_english": "One who has nowhere to go creates many exits.",
+    "meaning_amharic": "ግልጽ አቅጣጫ የሌለው ሰው ብዙ አማራጮችን ለመሞከር እንደሚባክን ወይም መድረሻ ሲጠፋ መውጫ መፈለግ እንደሚበዛ ይገልጻል።",
+    "meaning_english": "A person without a clear destination often wastes energy trying many different paths or looking for escapes when they lack direction.",
+    "origin": "Traditional",
+    "category": "Wisdom"
+  },
+  {
+    "id": "መ_7",
+    "proverb_amharic": "መልክ ጥፋ በስም ይደገፋ",
+    "proverb_english": "Let beauty be lost, if supported by a good name.",
+    "meaning_amharic": "ከመልክ ይልቅ ስምና ዝና (ባህሪ) የበለጠ ዋጋ እንዳለው፤ መልክ ቢጠፋ እንኳን ጥሩ ባህሪ ሰውን እንደሚያስከብር ይገልጻል።",
+    "meaning_english": "Character and reputation are far more valuable than physical beauty; a good name sustains a person even if they lack outward attractiveness.",
+    "origin": "Traditional",
+    "category": "Character"
+  },
+  {
+    "id": "መ_8",
+    "proverb_amharic": "መልክ ጥፋ ቆንጆን አሰናፈች",
+    "proverb_english": "The 'ugly' one put the beauty to shame.",
+    "meaning_amharic": "መልከ ጥፉ የሆነች ሴት በትጋቷ ወይም በባህሪዋ ቆንጆ የተባለችውን ልትበልጣት እንደምትችል ያሳያል። ዋናው ቁምነገር መልክ አለመሆኑን ይገልጻል።",
+    "meaning_english": "Inner virtue or hard work can outshine mere physical beauty, proving that substance is more important than appearance.",
+    "origin": "Traditional",
+    "category": "Wisdom"
+  },
+  {
+    "id": "መ_9",
+    "proverb_amharic": "መልካም ባል መጥፎ ሴት ይገራል",
+    "proverb_english": "A good husband tames a bad wife.",
+    "meaning_amharic": "የባል ጥሩነትና ትዕግስት መጥፎ ባህሪ ያላትን ሴት ሊለውጣትና ሊያስተካክላት እንደሚችል ይገልጻል።",
+    "meaning_english": "The positive influence, patience, and kindness of a good husband can improve a wife's difficult character.",
+    "origin": "Traditional",
+    "category": "Family"
+  },
+  {
+    "id": "መ_10",
+    "proverb_amharic": "መልካም ሴት ለባሏ ዘውድ ናት",
+    "proverb_english": "A good wife is a crown to her husband.",
+    "meaning_amharic": "ባህሪዋ ያማረና ታታሪ የሆነች ሚስት ለባሏ ክብርና ኩራት መሆኗን ይገልጻል።",
+    "meaning_english": "A virtuous and capable wife brings honor, dignity, and pride to her husband's life.",
+    "origin": "Traditional",
+    "category": "Family"
+  },
+  {
+    "id": "መ_11",
+    "proverb_amharic": "መልካም ስም ከመቃብር በላይ ይውላል",
+    "proverb_english": "A good name lives beyond the grave.",
+    "meaning_amharic": "ሰው ከሞተ በኋላ ስራውና ዝናው በምድር ላይ ለረጅም ጊዜ ተከብሮ እንደሚቆይ ይገልጻል።",
+    "meaning_english": "A person's legacy and reputation survive long after their physical death; doing good ensures you are remembered.",
+    "origin": "Traditional",
+    "category": "Legacy"
+  }
+]
