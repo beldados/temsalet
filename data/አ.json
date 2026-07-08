@@ -1,0 +1,47 @@
+[
+  {
+    "id": "አ_1",
+    "proverb_amharic": "አመት የማያበላ አመት ያጠላ",
+    "proverb_english": "A year that does not feed is a year that causes grudges.",
+    "meaning_amharic": "አንድ ወቅት ወይም አመት መልካም ፍሬ ካላፈራ በሰዎች መካከል ቅሬታና ጥል እንደሚፈጥር ይገልጻል።",
+    "meaning_english": "If a season or a year is unproductive, it leads to dissatisfaction and conflict among people.",
+    "origin": "Traditional",
+    "category": "Wisdom"
+  },
+  {
+    "id": "አ_2",
+    "proverb_amharic": "አመድ በዱቂት ይስቃል",
+    "proverb_english": "Ash laughs at fine dust.",
+    "meaning_amharic": "ራሱ ችግር ያለበት ሰው ሌላውን ዝቅ አድርጎ ሲያይ ወይም ሲሳለቅበት የሚነገር ምሳሌ ነው።",
+    "meaning_english": "It is used when someone who has their own flaws or problems mocks or looks down on someone else in a similar or slightly worse situation.",
+    "origin": "Traditional",
+    "category": "Irony"
+  },
+  {
+    "id": "አ_3",
+    "proverb_amharic": "አመድ በዱቂት ሲሳቅ ልቡ በንፋስ ውልቁ",
+    "proverb_english": "While ash laughs at fine dust, its heart is blown away by the wind.",
+    "meaning_amharic": "ሌላውን ዝቅ አድርጎ የሚመለከት ሰው የራሱን ደካማነት ዘንግቶ በድንገተኛ ችግር ሊጠቃ እንደሚችል ያሳያል።",
+    "meaning_english": "Someone who mocks others often forgets their own vulnerability and can be easily undone by circumstances.",
+    "origin": "Traditional",
+    "category": "Wisdom"
+  },
+  {
+    "id": "አ_4",
+    "proverb_amharic": "አመለኛ ሎሌህን በሰው ፊት አትዘዝው",
+    "proverb_english": "Do not command your temperamental servant in front of others.",
+    "meaning_amharic": "ባህሪው አስቸጋሪ የሆነን ሰው በሰው ፊት ማዘዝ ግጭት ሊፈጥር ስለሚችል ጥንቃቄ ማድረግ እንደሚገባ ይመክራል።",
+    "meaning_english": "It advises being careful when dealing with difficult people in public, as ordering them around might trigger a conflict or embarrassment.",
+    "origin": "Traditional",
+    "category": "Social"
+  },
+  {
+    "id": "አ_5",
+    "proverb_amharic": "አማትና ምራት ሳይስማሙ መሬት",
+    "proverb_english": "Without agreement between mother-in-law and daughter-in-law, there is only trouble.",
+    "meaning_amharic": "በቤተሰብ ውስጥ በተለይም በአማትና በምራት መካከል ሰላም ከሌለ የቤቱ ሁኔታ አስቸጋሪ እንደሚሆን ይገልጻል።",
+    "meaning_english": "It emphasizes that lack of harmony in key family relationships makes the domestic environment very difficult and unpleasant.",
+    "origin": "Traditional",
+    "category": "Family"
+  }
+]
