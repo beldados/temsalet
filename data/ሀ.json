@@ -43,5 +43,32 @@
     "meaning_english": "Events that affect a nation impact every individual; when there is trouble at a high level, everyone feels the vibration.",
     "origin": "Traditional",
     "category": "Unity"
+  },
+  {
+    "id": "ሀ_6",
+    "proverb_amharic": "ሀሜት አይቀር ከድሁም ቤት",
+    "proverb_english": "Gossip does not stay away even from a poor person's house.",
+    "meaning_amharic": "ሰው ምንም ቢኖረው ወይም ባይኖረው ከሀሜት እንደማያመልጥ፤ ሰዎች ስለማንኛውም ሰው ማውራታቸው እንደማይቀር ይገልጻል።",
+    "meaning_english": "No one is immune to gossip, regardless of their social or financial status. People will talk about everyone.",
+    "origin": "Traditional",
+    "category": "Social"
+  },
+  {
+    "id": "ሀ_7",
+    "proverb_amharic": "ሀምሌ ቢያበራ በጋ ይመስላል",
+    "proverb_english": "If July clears up, it looks like the dry season.",
+    "meaning_amharic": "አንዳንድ ጊዜ ነገሮች ካሉበት ተጨባጭ ሁኔታ ውጭ ሌላ መስለው ሊታዩ እንደሚችሉ፤ ጊዜያዊ ሁኔታዎች ሊያታልሉ እንደሚችሉ ያሳያል።",
+    "meaning_english": "Temporary appearances can be deceiving. Even in the middle of the rainy season (July), a clear day can make it look like summer.",
+    "origin": "Traditional",
+    "category": "Wisdom"
+  },
+  {
+    "id": "ሀ_8",
+    "proverb_amharic": "ሀሰተኛ ምስክር ጉልበት ይሰብር",
+    "proverb_english": "A false witness breaks one's strength.",
+    "meaning_amharic": "ውሸትና የሀሰት ምስክርነት በሰው ሕይወትና ፍትህ ላይ የሚያደርሰውን ከባድ ጉዳት ይገልጻል።",
+    "meaning_english": "False testimony and lies can destroy a person's standing and ruin lives. It emphasizes the destructive power of dishonesty.",
+    "origin": "Traditional",
+    "category": "Justice"
   }
 ]

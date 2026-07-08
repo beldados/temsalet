@@ -16,5 +16,41 @@
     "meaning_english": "It is useless to try to fix or worry about something that has already passed. It emphasizes the importance of focus on the present and future rather than regrets.",
     "origin": "Traditional",
     "category": "Wisdom"
+  },
+  {
+    "id": "ለ_2",
+    "proverb_amharic": "ለሀጥአን የወረደ ለጻድቃን ይተርፋል",
+    "proverb_english": "What is sent for the sinners overflows to the righteous.",
+    "meaning_amharic": "መጥፎ ነገር ወይም ቅጣት ለአጥፊዎች ሲመጣ ንጹሃንም አብረው ሊነኩ እንደሚችሉ፤ ወይም ደግሞ ለአንዳንዶች የተረፈው ለሌሎችም እንደሚተርፍ ይገልጻል።",
+    "meaning_english": "When a trial or consequence comes for those who deserve it, the innocent nearby may also be affected. It also suggests that a blessing meant for some can reach everyone.",
+    "origin": "Traditional",
+    "category": "Justice"
+  },
+  {
+    "id": "ለ_3",
+    "proverb_amharic": "ለሁሉም ጊዜ አለው",
+    "proverb_english": "There is a time for everything.",
+    "meaning_amharic": "ማንኛውም ነገር በራሱ ጊዜና ወቅት እንደሚከናወን፤ ትዕግስት አስፈላጊ መሆኑን የሚያስተምር ምሳሌ ነው።",
+    "meaning_english": "Everything happens in its own season; patience is key because things cannot be rushed before their time.",
+    "origin": "Traditional",
+    "category": "Wisdom"
+  },
+  {
+    "id": "ለ_4",
+    "proverb_amharic": "ለሂያጅ የለውም ወዳጅ",
+    "proverb_english": "A traveler has no permanent friend.",
+    "meaning_amharic": "ሁልጊዜ ከአንድ ቦታ ወደ ሌላ ቦታ የሚንቀሳቀስ ወይም የማይረጋጋ ሰው ዘላቂ ወዳጅነት ለመመስረት እንደሚከብደው ያሳያል።",
+    "meaning_english": "Someone who is always on the move or inconsistent finds it difficult to maintain deep, long-lasting relationships.",
+    "origin": "Traditional",
+    "category": "Relationships"
+  },
+  {
+    "id": "ለ_5",
+    "proverb_amharic": "ለህልም ምሳሌ የለውም",
+    "proverb_english": "There is no comparison for a dream.",
+    "meaning_amharic": "ህልም ረቂቅና የግል ስለሆነ ከእውነታው ዓለም ጋር በቀጥታ ሊነጻጸር እንደማይችል ይገልጻል።",
+    "meaning_english": "Dreams are subjective and unique; they cannot be easily compared to or explained by the logic of the waking world.",
+    "origin": "Traditional",
+    "category": "Wisdom"
   }
 ]
