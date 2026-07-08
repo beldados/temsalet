@@ -9,6 +9,69 @@
     "category": "Faith"
   },
   {
+    "id": "ሀ_2",
+    "proverb_amharic": "ሀምሳ ሎሚ ለሀምሳ ሰው ጌጡ ለአንድ ሰው ሸክሙ",
+    "proverb_english": "Fifty lemons are an ornament for fifty people, but a burden for one person.",
+    "meaning_amharic": "የጋራ ችግር በብዙዎች ሲከፋፈል ይቀልላል፤ ለአንድ ሰው ብቻ ሲሆን ግን ይከብዳል። የትብብርን አስፈላጊነት ይገልጻል።",
+    "meaning_english": "A problem shared among many becomes easy to bear, but it is overwhelming for a single individual. It emphasizes the importance of cooperation and unity.",
+    "origin": "Traditional",
+    "category": "Unity"
+  },
+  {
+    "id": "ሀ_3",
+    "proverb_amharic": "ሀብታም ያፈራል ሀሰተኛ ይረታል",
+    "proverb_english": "The wealthy produces; the liar is defeated.",
+    "meaning_amharic": "ታታሪነት ውጤት ያስገኛል፤ ውሸት ግን መጨረሻው ውድቀት መሆኑን ይገልጻል።",
+    "meaning_english": "Hard work leads to productivity, while dishonesty eventually leads to failure.",
+    "origin": "Traditional",
+    "category": "Wisdom"
+  },
+  {
+    "id": "ሀ_4",
+    "proverb_amharic": "ሀብት አይቀር ከድሀም ቤት",
+    "proverb_english": "Wealth does not stay away from a poor person's house.",
+    "meaning_amharic": "ድህነት ዘላቂ አይደለም፤ ማንኛውም ሰው በጥረቱ ሀብታም ሊሆን እንደሚችል ተስፋ የሚሰጥ ምሳሌ ነው።",
+    "meaning_english": "Wealth is attainable for everyone; it suggests that poverty is not a permanent state if one works hard.",
+    "origin": "Traditional",
+    "category": "Hope"
+  },
+  {
+    "id": "ሀ_5",
+    "proverb_amharic": "ሀገርን ሲስቡት ዛፍ ይወዘውዛል",
+    "proverb_english": "When the country is pulled, the trees shake.",
+    "meaning_amharic": "በሀገር ላይ የሚመጣ ነገር ሁሉንም ዜጋ እንደሚነካ፤ ትልልቅ ችግሮች ትናንሾችንም እንደሚያውኩ ያሳያል።",
+    "meaning_english": "Events that affect a nation impact every individual; when there is trouble at a high level, everyone feels the vibration.",
+    "origin": "Traditional",
+    "category": "Unity"
+  },
+  {
+    "id": "ሀ_6",
+    "proverb_amharic": "ሀሜት አይቀር ከድሁም ቤት",
+    "proverb_english": "Gossip does not stay away even from a poor person's house.",
+    "meaning_amharic": "ሰው ምንም ቢኖረው ወይም ባይኖረው ከሀሜት እንደማያመልጥ፤ ሰዎች ስለማንኛውም ሰው ማውራታቸው እንደማይቀር ይገልጻል።",
+    "meaning_english": "No one is immune to gossip, regardless of their social or financial status. People will talk about everyone.",
+    "origin": "Traditional",
+    "category": "Social"
+  },
+  {
+    "id": "ሀ_7",
+    "proverb_amharic": "ሀምሌ ቢያበራ በጋ ይመስላል",
+    "proverb_english": "If July clears up, it looks like the dry season.",
+    "meaning_amharic": "አንዳንድ ጊዜ ነገሮች ካሉበት ተጨባጭ ሁኔታ ውጭ ሌላ መስለው ሊታዩ እንደሚችሉ፤ ጊዜያዊ ሁኔታዎች ሊያታልሉ እንደሚችሉ ያሳያል።",
+    "meaning_english": "Temporary appearances can be deceiving. Even in the middle of the rainy season (July), a clear day can make it look like summer.",
+    "origin": "Traditional",
+    "category": "Wisdom"
+  },
+  {
+    "id": "ሀ_8",
+    "proverb_amharic": "ሀሰተኛ ምስክር ጉልበት ይሰብር",
+    "proverb_english": "A false witness breaks one's strength.",
+    "meaning_amharic": "ውሸትና የሀሰት ምስክርነት በሰው ሕይወትና ፍትህ ላይ የሚያደርሰውን ከባድ ጉዳት ይገልጻል።",
+    "meaning_english": "False testimony and lies can destroy a person's standing and ruin lives. It emphasizes the destructive power of dishonesty.",
+    "origin": "Traditional",
+    "category": "Justice"
+  },
+  {
     "id": "ለ_1",
     "proverb_amharic": "ለሆድ ሲሉ ይሞቱ፤ ለክብር ሲሉ ይዋጉ።",
     "proverb_english": "They die for greed; they fight for honor.",
@@ -16,5 +79,203 @@
     "meaning_english": "Emphasizes the importance of living with honor rather than greed.",
     "origin": "Traditional",
     "category": "Honor"
+  },
+  {
+    "id": "ለ_1",
+    "proverb_amharic": "ላለፈ ክረምት ቤት አይሰራም",
+    "proverb_english": "One does not build a house for a past winter.",
+    "meaning_amharic": "ያለፈ ነገርን ለመለወጥ መሞከር ትርጉም የለውም፤ ጊዜው ካለፈ በኋላ የሚደረግ ጥረት ፋይዳ እንደሌለው ይገልጻል።",
+    "meaning_english": "It is useless to try to fix or worry about something that has already passed. It emphasizes the importance of focus on the present and future rather than regrets.",
+    "origin": "Traditional",
+    "category": "Wisdom"
+  },
+  {
+    "id": "ለ_2",
+    "proverb_amharic": "ለሀጥአን የወረደ ለጻድቃን ይተርፋል",
+    "proverb_english": "What is sent for the sinners overflows to the righteous.",
+    "meaning_amharic": "መጥፎ ነገር ወይም ቅጣት ለአጥፊዎች ሲመጣ ንጹሃንም አብረው ሊነኩ እንደሚችሉ፤ ወይም ደግሞ ለአንዳንዶች የተረፈው ለሌሎችም እንደሚተርፍ ይገልጻል።",
+    "meaning_english": "When a trial or consequence comes for those who deserve it, the innocent nearby may also be affected. It also suggests that a blessing meant for some can reach everyone.",
+    "origin": "Traditional",
+    "category": "Justice"
+  },
+  {
+    "id": "ለ_3",
+    "proverb_amharic": "ለሁሉም ጊዜ አለው",
+    "proverb_english": "There is a time for everything.",
+    "meaning_amharic": "ማንኛውም ነገር በራሱ ጊዜና ወቅት እንደሚከናወን፤ ትዕግስት አስፈላጊ መሆኑን የሚያስተምር ምሳሌ ነው።",
+    "meaning_english": "Everything happens in its own season; patience is key because things cannot be rushed before their time.",
+    "origin": "Traditional",
+    "category": "Wisdom"
+  },
+  {
+    "id": "ለ_4",
+    "proverb_amharic": "ለሂያጅ የለውም ወዳጅ",
+    "proverb_english": "A traveler has no permanent friend.",
+    "meaning_amharic": "ሁልጊዜ ከአንድ ቦታ ወደ ሌላ ቦታ የሚንቀሳቀስ ወይም የማይረጋጋ ሰው ዘላቂ ወዳጅነት ለመመስረት እንደሚከብደው ያሳያል።",
+    "meaning_english": "Someone who is always on the move or inconsistent finds it difficult to maintain deep, long-lasting relationships.",
+    "origin": "Traditional",
+    "category": "Relationships"
+  },
+  {
+    "id": "ለ_5",
+    "proverb_amharic": "ለህልም ምሳሌ የለውም",
+    "proverb_english": "There is no comparison for a dream.",
+    "meaning_amharic": "ህልም ረቂቅና የግል ስለሆነ ከእውነታው ዓለም ጋር በቀጥታ ሊነጻጸር እንደማይችል ይገልጻል።",
+    "meaning_english": "Dreams are subjective and unique; they cannot be easily compared to or explained by the logic of the waking world.",
+    "origin": "Traditional",
+    "category": "Wisdom"
+  },
+  {
+    "id": "ለ_6",
+    "proverb_amharic": "ለወጋ የወጣ ጌታዬ በልቶ አይመለስም",
+    "proverb_english": "A master who went out to fight doesn't return just to eat.",
+    "meaning_amharic": "አንድ ሰው ለትልቅ ዓላማ ወይም ለስራ ከወጣ ያሰበውን ሳይጨርስ ለጥቅም ወይም ለምቾት ብሎ መመለስ እንደሌለበት ይገልጻል።",
+    "meaning_english": "Once someone sets out for a significant mission or duty, they should not return or be distracted by minor comforts until the task is complete.",
+    "origin": "Traditional",
+    "category": "Duty"
+  },
+  {
+    "id": "ለ_7",
+    "proverb_amharic": "ለያልፍ ውሀ አደረገኝ ድሀ",
+    "proverb_english": "Temporary water made me poor.",
+    "meaning_amharic": "ጊዜያዊ ለሆነና ለማያልፍ ነገር ተብሎ ትልቅ ዋጋ መክፈል ወይም ቋሚ ንብረትን ማጣት ስህተት መሆኑን ያሳያል።",
+    "meaning_english": "It highlights the folly of losing something permanent or valuable for the sake of something fleeting and temporary.",
+    "origin": "Traditional",
+    "category": "Wisdom"
+  },
+  {
+    "id": "ለ_8",
+    "proverb_amharic": "ለያዘው አይገደውም",
+    "proverb_english": "It is not difficult for the one who holds it.",
+    "meaning_amharic": "አንድን ስራ ወይም ኃላፊነት ለሚወጣው ሰው ከውጭ ለሚያየው እንደሚመስለው ላይከብደው እንደሚችል ይገልጻል።",
+    "meaning_english": "Things often look much harder from the outside; the person actually doing the work finds a way to manage it.",
+    "origin": "Traditional",
+    "category": "Wisdom"
+  },
+  {
+    "id": "ለ_9",
+    "proverb_amharic": "ለጣላ የመጣ ሰበብ አያጣም",
+    "proverb_english": "One who comes to pick a fight will never lack an excuse.",
+    "meaning_amharic": "ጠብ የሚፈልግ ሰው ጠብ ለመጀመር ሁልጊዜ ምክንያት እንደሚፈልግና እንደማያጣ ይገልጻል።",
+    "meaning_english": "Someone looking for conflict will always find a reason or an excuse to justify their behavior.",
+    "origin": "Traditional",
+    "category": "Social"
+  },
+  {
+    "id": "ለ_10",
+    "proverb_amharic": "ለሰው ይጨመርለታል",
+    "proverb_english": "To the person, more is added.",
+    "meaning_amharic": "ያለው ሰው ላይ ይጨመርለታል፤ ወይም ደግሞ መልካም የሚያደርግ ሰው የበለጠ በረከት እንደሚያገኝ ያሳያል።",
+    "meaning_english": "This suggests that abundance attracts abundance, or that those who act rightly receive further blessings.",
+    "origin": "Traditional",
+    "category": "Wisdom"
+  },
+  {
+    "id": "ለ_11",
+    "proverb_amharic": "ላለፈ አይጸጸቱም ለሚመጣው አይበልጡም",
+    "proverb_english": "Do not regret the past, and do not brag about the future.",
+    "meaning_amharic": "ያለፈው አልፏልና መጸጸት ትርጉም የለውም፤ ስለሚመጣውም ገና ስላልታየ መመካት አይገባም የሚል ትልቅ ምክር ነው።",
+    "meaning_english": "A piece of advice to not dwell on past mistakes that cannot be changed, and to remain humble about the future which has not yet arrived.",
+    "origin": "Traditional",
+    "category": "Wisdom"
+  },
+  {
+    "id": "መ_1",
+    "proverb_amharic": "ምን ያመጣ ድሀ ምን ያሳሳ ውሃ",
+    "proverb_english": "What can a poor man bring? What can water thin?",
+    "meaning_amharic": "አንዳንድ ነገሮች ተፈጥሯዊ ባህሪያቸው የማይለወጥ መሆኑን ወይም አቅም የሌለው ሰው ተጽዕኖ ማሳደር እንደማይችል ይገልጻል።",
+    "meaning_english": "Certain things have inherent natures that don't change, or it implies that someone without resources cannot bring much to the table.",
+    "origin": "Traditional",
+    "category": "Wisdom"
+  },
+  {
+    "id": "መ_2",
+    "proverb_amharic": "ምን ቢርሱ እንደሳምን አይርሱ",
+    "proverb_english": "No matter how much you forget, do not forget the week.",
+    "meaning_amharic": "በህይወት ውስጥ ብዙ ነገሮች ቢረሱም፤ መሰረታዊ የሆኑ ግዴታዎችንና የጊዜ ዑደቶችን አለመዘንጋት እንደሚገባ ያስገነዝባል።",
+    "meaning_english": "Even if life is distracting, one should never forget fundamental duties or the basic rhythms of life.",
+    "origin": "Traditional",
+    "category": "Discipline"
+  },
+  {
+    "id": "መ_3",
+    "proverb_amharic": "ምንም ቢጠም መንገድ ምንም ቢከፋ ዘመድ",
+    "proverb_english": "No matter how crooked the road, no matter how bad the relative.",
+    "meaning_amharic": "መንገድ ቢጠማም መድረሻው አይቀርም፤ ዘመድም ቢከፋ መተካቻ ስለሌለው መታገስና መቀበል እንደሚገባ ያሳያል።",
+    "meaning_english": "Just as a winding road is still the way to your destination, family remains family regardless of their flaws; you must stick with them.",
+    "origin": "Traditional",
+    "category": "Family"
+  },
+  {
+    "id": "መ_4",
+    "proverb_amharic": "ምን ቢፋቀሩ አብረው አይቀበሩ",
+    "proverb_english": "No matter how much they love each other, they are not buried together.",
+    "meaning_amharic": "ሰው ምንም ያህል ቢዋደድ መጨረሻ ላይ ሁሉም የራሱ የሆነ ኃላፊነትና የራሱ መንገድ እንዳለው ይገልጻል።",
+    "meaning_english": "Despite the depth of love and companionship, everyone ultimately faces their destiny and final journey individually.",
+    "origin": "Traditional",
+    "category": "Life"
+  },
+  {
+    "id": "መ_5",
+    "proverb_amharic": "ምከረው ምከረው እምቢ ሲል መከራ ይምከረው",
+    "proverb_english": "Advise him, advise him; if he refuses, let trouble advise him.",
+    "meaning_amharic": "አንድ ሰው በምክር ሊመለስ ካልቻለ፤ በሚገጥመው ችግርና መከራ እንዲማር መተው እንደሚሻል ይገልጻል።",
+    "meaning_english": "If someone refuses to listen to good advice, they will eventually learn the hard way through the consequences of their actions.",
+    "origin": "Traditional",
+    "category": "Wisdom"
+  },
+  {
+    "id": "መ_6",
+    "proverb_amharic": "መሄጃ የሌለው መውጫውን ያበዛል",
+    "proverb_english": "One who has nowhere to go creates many exits.",
+    "meaning_amharic": "ግልጽ አቅጣጫ የሌለው ሰው ብዙ አማራጮችን ለመሞከር እንደሚባክን ወይም መድረሻ ሲጠፋ መውጫ መፈለግ እንደሚበዛ ይገልጻል።",
+    "meaning_english": "A person without a clear destination often wastes energy trying many different paths or looking for escapes when they lack direction.",
+    "origin": "Traditional",
+    "category": "Wisdom"
+  },
+  {
+    "id": "መ_7",
+    "proverb_amharic": "መልክ ጥፋ በስም ይደገፋ",
+    "proverb_english": "Let beauty be lost, if supported by a good name.",
+    "meaning_amharic": "ከመልክ ይልቅ ስምና ዝና (ባህሪ) የበለጠ ዋጋ እንዳለው፤ መልክ ቢጠፋ እንኳን ጥሩ ባህሪ ሰውን እንደሚያስከብር ይገልጻል።",
+    "meaning_english": "Character and reputation are far more valuable than physical beauty; a good name sustains a person even if they lack outward attractiveness.",
+    "origin": "Traditional",
+    "category": "Character"
+  },
+  {
+    "id": "መ_8",
+    "proverb_amharic": "መልክ ጥፋ ቆንጆን አሰናፈች",
+    "proverb_english": "The 'ugly' one put the beauty to shame.",
+    "meaning_amharic": "መልከ ጥፉ የሆነች ሴት በትጋቷ ወይም በባህሪዋ ቆንጆ የተባለችውን ልትበልጣት እንደምትችል ያሳያል። ዋናው ቁምነገር መልክ አለመሆኑን ይገልጻል።",
+    "meaning_english": "Inner virtue or hard work can outshine mere physical beauty, proving that substance is more important than appearance.",
+    "origin": "Traditional",
+    "category": "Wisdom"
+  },
+  {
+    "id": "መ_9",
+    "proverb_amharic": "መልካም ባል መጥፎ ሴት ይገራል",
+    "proverb_english": "A good husband tames a bad wife.",
+    "meaning_amharic": "የባል ጥሩነትና ትዕግስት መጥፎ ባህሪ ያላትን ሴት ሊለውጣትና ሊያስተካክላት እንደሚችል ይገልጻል።",
+    "meaning_english": "The positive influence, patience, and kindness of a good husband can improve a wife's difficult character.",
+    "origin": "Traditional",
+    "category": "Family"
+  },
+  {
+    "id": "መ_10",
+    "proverb_amharic": "መልካም ሴት ለባሏ ዘውድ ናት",
+    "proverb_english": "A good wife is a crown to her husband.",
+    "meaning_amharic": "ባህሪዋ ያማረና ታታሪ የሆነች ሚስት ለባሏ ክብርና ኩራት መሆኗን ይገልጻል።",
+    "meaning_english": "A virtuous and capable wife brings honor, dignity, and pride to her husband's life.",
+    "origin": "Traditional",
+    "category": "Family"
+  },
+  {
+    "id": "መ_11",
+    "proverb_amharic": "መልካም ስም ከመቃብር በላይ ይውላል",
+    "proverb_english": "A good name lives beyond the grave.",
+    "meaning_amharic": "ሰው ከሞተ በኋላ ስራውና ዝናው በምድር ላይ ለረጅም ጊዜ ተከብሮ እንደሚቆይ ይገልጻል።",
+    "meaning_english": "A person's legacy and reputation survive long after their physical death; doing good ensures you are remembered.",
+    "origin": "Traditional",
+    "category": "Legacy"
   }
 ]

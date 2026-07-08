@@ -7,5 +7,104 @@
     "meaning_english": "Emphasizes the importance of living with honor rather than greed.",
     "origin": "Traditional",
     "category": "Honor"
+  },
+  {
+    "id": "ለ_1",
+    "proverb_amharic": "ላለፈ ክረምት ቤት አይሰራም",
+    "proverb_english": "One does not build a house for a past winter.",
+    "meaning_amharic": "ያለፈ ነገርን ለመለወጥ መሞከር ትርጉም የለውም፤ ጊዜው ካለፈ በኋላ የሚደረግ ጥረት ፋይዳ እንደሌለው ይገልጻል።",
+    "meaning_english": "It is useless to try to fix or worry about something that has already passed. It emphasizes the importance of focus on the present and future rather than regrets.",
+    "origin": "Traditional",
+    "category": "Wisdom"
+  },
+  {
+    "id": "ለ_2",
+    "proverb_amharic": "ለሀጥአን የወረደ ለጻድቃን ይተርፋል",
+    "proverb_english": "What is sent for the sinners overflows to the righteous.",
+    "meaning_amharic": "መጥፎ ነገር ወይም ቅጣት ለአጥፊዎች ሲመጣ ንጹሃንም አብረው ሊነኩ እንደሚችሉ፤ ወይም ደግሞ ለአንዳንዶች የተረፈው ለሌሎችም እንደሚተርፍ ይገልጻል።",
+    "meaning_english": "When a trial or consequence comes for those who deserve it, the innocent nearby may also be affected. It also suggests that a blessing meant for some can reach everyone.",
+    "origin": "Traditional",
+    "category": "Justice"
+  },
+  {
+    "id": "ለ_3",
+    "proverb_amharic": "ለሁሉም ጊዜ አለው",
+    "proverb_english": "There is a time for everything.",
+    "meaning_amharic": "ማንኛውም ነገር በራሱ ጊዜና ወቅት እንደሚከናወን፤ ትዕግስት አስፈላጊ መሆኑን የሚያስተምር ምሳሌ ነው።",
+    "meaning_english": "Everything happens in its own season; patience is key because things cannot be rushed before their time.",
+    "origin": "Traditional",
+    "category": "Wisdom"
+  },
+  {
+    "id": "ለ_4",
+    "proverb_amharic": "ለሂያጅ የለውም ወዳጅ",
+    "proverb_english": "A traveler has no permanent friend.",
+    "meaning_amharic": "ሁልጊዜ ከአንድ ቦታ ወደ ሌላ ቦታ የሚንቀሳቀስ ወይም የማይረጋጋ ሰው ዘላቂ ወዳጅነት ለመመስረት እንደሚከብደው ያሳያል።",
+    "meaning_english": "Someone who is always on the move or inconsistent finds it difficult to maintain deep, long-lasting relationships.",
+    "origin": "Traditional",
+    "category": "Relationships"
+  },
+  {
+    "id": "ለ_5",
+    "proverb_amharic": "ለህልም ምሳሌ የለውም",
+    "proverb_english": "There is no comparison for a dream.",
+    "meaning_amharic": "ህልም ረቂቅና የግል ስለሆነ ከእውነታው ዓለም ጋር በቀጥታ ሊነጻጸር እንደማይችል ይገልጻል።",
+    "meaning_english": "Dreams are subjective and unique; they cannot be easily compared to or explained by the logic of the waking world.",
+    "origin": "Traditional",
+    "category": "Wisdom"
+  },
+  {
+    "id": "ለ_6",
+    "proverb_amharic": "ለወጋ የወጣ ጌታዬ በልቶ አይመለስም",
+    "proverb_english": "A master who went out to fight doesn't return just to eat.",
+    "meaning_amharic": "አንድ ሰው ለትልቅ ዓላማ ወይም ለስራ ከወጣ ያሰበውን ሳይጨርስ ለጥቅም ወይም ለምቾት ብሎ መመለስ እንደሌለበት ይገልጻል።",
+    "meaning_english": "Once someone sets out for a significant mission or duty, they should not return or be distracted by minor comforts until the task is complete.",
+    "origin": "Traditional",
+    "category": "Duty"
+  },
+  {
+    "id": "ለ_7",
+    "proverb_amharic": "ለያልፍ ውሀ አደረገኝ ድሀ",
+    "proverb_english": "Temporary water made me poor.",
+    "meaning_amharic": "ጊዜያዊ ለሆነና ለማያልፍ ነገር ተብሎ ትልቅ ዋጋ መክፈል ወይም ቋሚ ንብረትን ማጣት ስህተት መሆኑን ያሳያል።",
+    "meaning_english": "It highlights the folly of losing something permanent or valuable for the sake of something fleeting and temporary.",
+    "origin": "Traditional",
+    "category": "Wisdom"
+  },
+  {
+    "id": "ለ_8",
+    "proverb_amharic": "ለያዘው አይገደውም",
+    "proverb_english": "It is not difficult for the one who holds it.",
+    "meaning_amharic": "አንድን ስራ ወይም ኃላፊነት ለሚወጣው ሰው ከውጭ ለሚያየው እንደሚመስለው ላይከብደው እንደሚችል ይገልጻል።",
+    "meaning_english": "Things often look much harder from the outside; the person actually doing the work finds a way to manage it.",
+    "origin": "Traditional",
+    "category": "Wisdom"
+  },
+  {
+    "id": "ለ_9",
+    "proverb_amharic": "ለጣላ የመጣ ሰበብ አያጣም",
+    "proverb_english": "One who comes to pick a fight will never lack an excuse.",
+    "meaning_amharic": "ጠብ የሚፈልግ ሰው ጠብ ለመጀመር ሁልጊዜ ምክንያት እንደሚፈልግና እንደማያጣ ይገልጻል።",
+    "meaning_english": "Someone looking for conflict will always find a reason or an excuse to justify their behavior.",
+    "origin": "Traditional",
+    "category": "Social"
+  },
+  {
+    "id": "ለ_10",
+    "proverb_amharic": "ለሰው ይጨመርለታል",
+    "proverb_english": "To the person, more is added.",
+    "meaning_amharic": "ያለው ሰው ላይ ይጨመርለታል፤ ወይም ደግሞ መልካም የሚያደርግ ሰው የበለጠ በረከት እንደሚያገኝ ያሳያል።",
+    "meaning_english": "This suggests that abundance attracts abundance, or that those who act rightly receive further blessings.",
+    "origin": "Traditional",
+    "category": "Wisdom"
+  },
+  {
+    "id": "ለ_11",
+    "proverb_amharic": "ላለፈ አይጸጸቱም ለሚመጣው አይበልጡም",
+    "proverb_english": "Do not regret the past, and do not brag about the future.",
+    "meaning_amharic": "ያለፈው አልፏልና መጸጸት ትርጉም የለውም፤ ስለሚመጣውም ገና ስላልታየ መመካት አይገባም የሚል ትልቅ ምክር ነው።",
+    "meaning_english": "A piece of advice to not dwell on past mistakes that cannot be changed, and to remain humble about the future which has not yet arrived.",
+    "origin": "Traditional",
+    "category": "Wisdom"
   }
 ]

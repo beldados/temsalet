@@ -7,5 +7,68 @@
     "meaning_english": "True wealth is a gift from the Creator.",
     "origin": "Traditional",
     "category": "Faith"
+  },
+  {
+    "id": "ሀ_2",
+    "proverb_amharic": "ሀምሳ ሎሚ ለሀምሳ ሰው ጌጡ ለአንድ ሰው ሸክሙ",
+    "proverb_english": "Fifty lemons are an ornament for fifty people, but a burden for one person.",
+    "meaning_amharic": "የጋራ ችግር በብዙዎች ሲከፋፈል ይቀልላል፤ ለአንድ ሰው ብቻ ሲሆን ግን ይከብዳል። የትብብርን አስፈላጊነት ይገልጻል።",
+    "meaning_english": "A problem shared among many becomes easy to bear, but it is overwhelming for a single individual. It emphasizes the importance of cooperation and unity.",
+    "origin": "Traditional",
+    "category": "Unity"
+  },
+  {
+    "id": "ሀ_3",
+    "proverb_amharic": "ሀብታም ያፈራል ሀሰተኛ ይረታል",
+    "proverb_english": "The wealthy produces; the liar is defeated.",
+    "meaning_amharic": "ታታሪነት ውጤት ያስገኛል፤ ውሸት ግን መጨረሻው ውድቀት መሆኑን ይገልጻል።",
+    "meaning_english": "Hard work leads to productivity, while dishonesty eventually leads to failure.",
+    "origin": "Traditional",
+    "category": "Wisdom"
+  },
+  {
+    "id": "ሀ_4",
+    "proverb_amharic": "ሀብት አይቀር ከድሀም ቤት",
+    "proverb_english": "Wealth does not stay away from a poor person's house.",
+    "meaning_amharic": "ድህነት ዘላቂ አይደለም፤ ማንኛውም ሰው በጥረቱ ሀብታም ሊሆን እንደሚችል ተስፋ የሚሰጥ ምሳሌ ነው።",
+    "meaning_english": "Wealth is attainable for everyone; it suggests that poverty is not a permanent state if one works hard.",
+    "origin": "Traditional",
+    "category": "Hope"
+  },
+  {
+    "id": "ሀ_5",
+    "proverb_amharic": "ሀገርን ሲስቡት ዛፍ ይወዘውዛል",
+    "proverb_english": "When the country is pulled, the trees shake.",
+    "meaning_amharic": "በሀገር ላይ የሚመጣ ነገር ሁሉንም ዜጋ እንደሚነካ፤ ትልልቅ ችግሮች ትናንሾችንም እንደሚያውኩ ያሳያል።",
+    "meaning_english": "Events that affect a nation impact every individual; when there is trouble at a high level, everyone feels the vibration.",
+    "origin": "Traditional",
+    "category": "Unity"
+  },
+  {
+    "id": "ሀ_6",
+    "proverb_amharic": "ሀሜት አይቀር ከድሁም ቤት",
+    "proverb_english": "Gossip does not stay away even from a poor person's house.",
+    "meaning_amharic": "ሰው ምንም ቢኖረው ወይም ባይኖረው ከሀሜት እንደማያመልጥ፤ ሰዎች ስለማንኛውም ሰው ማውራታቸው እንደማይቀር ይገልጻል።",
+    "meaning_english": "No one is immune to gossip, regardless of their social or financial status. People will talk about everyone.",
+    "origin": "Traditional",
+    "category": "Social"
+  },
+  {
+    "id": "ሀ_7",
+    "proverb_amharic": "ሀምሌ ቢያበራ በጋ ይመስላል",
+    "proverb_english": "If July clears up, it looks like the dry season.",
+    "meaning_amharic": "አንዳንድ ጊዜ ነገሮች ካሉበት ተጨባጭ ሁኔታ ውጭ ሌላ መስለው ሊታዩ እንደሚችሉ፤ ጊዜያዊ ሁኔታዎች ሊያታልሉ እንደሚችሉ ያሳያል።",
+    "meaning_english": "Temporary appearances can be deceiving. Even in the middle of the rainy season (July), a clear day can make it look like summer.",
+    "origin": "Traditional",
+    "category": "Wisdom"
+  },
+  {
+    "id": "ሀ_8",
+    "proverb_amharic": "ሀሰተኛ ምስክር ጉልበት ይሰብር",
+    "proverb_english": "A false witness breaks one's strength.",
+    "meaning_amharic": "ውሸትና የሀሰት ምስክርነት በሰው ሕይወትና ፍትህ ላይ የሚያደርሰውን ከባድ ጉዳት ይገልጻል።",
+    "meaning_english": "False testimony and lies can destroy a person's standing and ruin lives. It emphasizes the destructive power of dishonesty.",
+    "origin": "Traditional",
+    "category": "Justice"
   }
 ]
