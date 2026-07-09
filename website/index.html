@@ -15,6 +15,20 @@
     <header
       class="border-b border-amber-100 bg-white/80 backdrop-blur sticky top-0 z-50"
     >
+      <style>
+        .btn-active-like {
+          color: #ef4444 !important;
+          transform: scale(1.2);
+        }
+        .btn-active-save {
+          color: #3b82f6 !important;
+          transform: scale(1.2);
+        }
+        .action-btn {
+          transition: all 0.2s ease;
+          cursor: pointer;
+        }
+      </style>
       <div
         class="max-w-4xl mx-auto px-4 py-4 flex justify-between items-center"
       >
@@ -95,7 +109,12 @@
           class="flex flex-wrap gap-1.5 justify-center py-2"
           id="alphabet-filters"
         >
-          <!-- Will be dynamically generated -->
+          <button
+            onclick="showSavedOnly()"
+            class="px-3 py-1 text-sm bg-blue-100 text-blue-700 rounded font-bold"
+          >
+            የተቀመጡ (Saved)
+          </button>
         </div>
       </div>
 
@@ -115,10 +134,9 @@
     <!-- Frontend Logic -->
     <script>
       let proverbsList = [];
+      let currentView = [];
 
-      // 1. THE MAP (The most important part)
       const fidelGroups = {
-        // ሀ (Ha)
         ሀ: "ሀ",
         ሁ: "ሀ",
         ሂ: "ሀ",
@@ -126,7 +144,6 @@
         ሄ: "ሀ",
         ህ: "ሀ",
         ሆ: "ሀ",
-        // ለ (Le)
         ለ: "ለ",
         ሉ: "ለ",
         ሊ: "ለ",
@@ -134,15 +151,6 @@
         ሌ: "ለ",
         ል: "ለ",
         ሎ: "ለ",
-        // ሐ (Hha)
-        ሐ: "ሐ",
-        ሑ: "ሐ",
-        ሒ: "ሐ",
-        ሓ: "ሐ",
-        ሔ: "ሐ",
-        ሕ: "ሐ",
-        ሖ: "ሐ",
-        // መ (Me)
         መ: "መ",
         ሙ: "መ",
         ሚ: "መ",
@@ -150,15 +158,6 @@
         ሜ: "መ",
         ም: "መ",
         ሞ: "መ",
-        // ሠ (Se)
-        ሠ: "ሠ",
-        ሡ: "ሠ",
-        ሢ: "ሠ",
-        ሣ: "ሠ",
-        ሤ: "ሠ",
-        ሥ: "ሠ",
-        ሦ: "ሠ",
-        // ረ (Re)
         ረ: "ረ",
         ሩ: "ረ",
         ሪ: "ረ",
@@ -166,7 +165,6 @@
         ሬ: "ረ",
         ር: "ረ",
         ሮ: "ረ",
-        // ሰ (Se)
         ሰ: "ሰ",
         ሱ: "ሰ",
         ሲ: "ሰ",
@@ -174,71 +172,6 @@
         ሴ: "ሰ",
         ስ: "ሰ",
         ሶ: "ሰ",
-        // ሸ (She)
-        ሸ: "ሸ",
-        ሹ: "ሸ",
-        ሺ: "ሸ",
-        ሻ: "ሸ",
-        ሼ: "ሸ",
-        ሽ: "ሸ",
-        ሾ: "ሸ",
-        // ቀ (Qe)
-        ቀ: "ቀ",
-        ቁ: "ቀ",
-        ቂ: "ቀ",
-        ቃ: "ቀ",
-        ቄ: "ቀ",
-        ቅ: "ቀ",
-        ቆ: "ቀ",
-        // በ (Be)
-        በ: "በ",
-        ቡ: "በ",
-        ቢ: "በ",
-        ባ: "በ",
-        ቤ: "በ",
-        ብ: "በ",
-        ቦ: "በ",
-        // ተ (Te)
-        ተ: "ተ",
-        ቱ: "ተ",
-        ቲ: "ተ",
-        ታ: "ተ",
-        ቴ: "ተ",
-        ት: "ተ",
-        ቶ: "ተ",
-        // ቸ (Che)
-        ቸ: "ቸ",
-        ሹ: "ቸ",
-        ቺ: "ቸ",
-        ቻ: "ቸ",
-        ቼ: "ቸ",
-        ች: "ቸ",
-        ቾ: "ቸ",
-        // ኀ (Ha - rare)
-        ኀ: "ኀ",
-        ኁ: "ኀ",
-        ኂ: "ኀ",
-        ኃ: "ኀ",
-        ኄ: "ኀ",
-        ኅ: "ኀ",
-        ኆ: "ኀ",
-        // ነ (Ne)
-        ነ: "ነ",
-        ኑ: "ነ",
-        ኒ: "ነ",
-        ና: "ነ",
-        ኔ: "ነ",
-        ን: "ነ",
-        ኖ: "ነ",
-        // ኘ (Nye)
-        ኘ: "ኘ",
-        ኙ: "ኘ",
-        ኚ: "ኘ",
-        ኛ: "ኘ",
-        ኜ: "ኘ",
-        ኝ: "ኘ",
-        ኞ: "ኘ",
-        // አ (A)
         አ: "አ",
         ኡ: "አ",
         ኢ: "አ",
@@ -246,150 +179,21 @@
         ኤ: "አ",
         እ: "አ",
         ኦ: "አ",
-        // ከ (Ke)
-        ከ: "ከ",
-        ኩ: "ከ",
-        ኪ: "ከ",
-        ካ: "ከ",
-        ኬ: "ከ",
-        ክ: "ከ",
-        ኮ: "ከ",
-        // ወ (We)
-        ወ: "ወ",
-        ዉ: "ወ",
-        ዊ: "ወ",
-        ዋ: "ወ",
-        ዌ: "ወ",
-        ው: "ወ",
-        ዎ: "ወ",
-        // ዐ (A - Ain)
-        ዐ: "ዐ",
-        ዑ: "ዐ",
-        ዒ: "ዐ",
-        ዓ: "ዐ",
-        ዔ: "ዐ",
-        ዕ: "ዐ",
-        ዖ: "ዐ",
-        // ዘ (Ze)
-        ዘ: "ዘ",
-        ዙ: "ዘ",
-        ዚ: "ዘ",
-        ዛ: "ዘ",
-        ዜ: "ዘ",
-        ዝ: "ዘ",
-        ዞ: "ዘ",
-        // ዠ (Zhe)
-        ዠ: "ዠ",
-        ዡ: "ዠ",
-        ዢ: "ዠ",
-        ዣ: "ዠ",
-        ዤ: "ዠ",
-        ዥ: "ዠ",
-        ዦ: "ዠ",
-        // የ (Ye)
-        የ: "የ",
-        ዩ: "የ",
-        ዪ: "የ",
-        ያ: "የ",
-        ዬ: "የ",
-        ይ: "የ",
-        ዮ: "የ",
-        // ደ (De)
-        ደ: "ደ",
-        ዱ: "ደ",
-        ዲ: "ደ",
-        ዳ: "ደ",
-        ዴ: "ደ",
-        ድ: "ደ",
-        ዶ: "ደ",
-        // ጀ (Je)
-        ጀ: "ጀ",
-        ጁ: "ጀ",
-        ጂ: "ጀ",
-        ጃ: "ጀ",
-        ጄ: "ጀ",
-        ጅ: "ጀ",
-        ጆ: "ጀ",
-        // ገ (Ge)
-        ገ: "ገ",
-        ጉ: "ገ",
-        ጊ: "ገ",
-        ጋ: "ገ",
-        ጌ: "ገ",
-        ግ: "ገ",
-        ጎ: "ገ",
-        // ጠ (T'e)
-        ጠ: "ጠ",
-        ጡ: "ጠ",
-        ጢ: "ጠ",
-        ጣ: "ጠ",
-        ጤ: "ጠ",
-        ጥ: "ጠ",
-        ጦ: "ጠ",
-        // ጨ (Ch'e)
-        ጨ: "ጨ",
-        ጩ: "ጨ",
-        ጪ: "ጨ",
-        ጫ: "ጨ",
-        ጬ: "ጨ",
-        ጭ: "ጨ",
-        ጮ: "ጨ",
-        // ጰ (P'e)
-        ጰ: "ጰ",
-        ጱ: "ጰ",
-        ጲ: "ጰ",
-        ጳ: "ጰ",
-        ጴ: "ጰ",
-        ጵ: "ጰ",
-        ጶ: "ጰ",
-        // ጸ (Tse)
-        ጸ: "ጸ",
-        ጹ: "ጸ",
-        ጺ: "ጸ",
-        ጻ: "ጸ",
-        ጼ: "ጸ",
-        ጽ: "ጸ",
-        ጾ: "ጸ",
-        // ፀ (Tse - Sun)
-        ፀ: "ፀ",
-        ፁ: "ፀ",
-        ፂ: "ፀ",
-        ፃ: "ፀ",
-        ፄ: "ፀ",
-        ፅ: "ፀ",
-        ፆ: "ፀ",
-        // ፈ (Fe)
-        ፈ: "ፈ",
-        ፉ: "ፈ",
-        ፊ: "ፈ",
-        ፋ: "ፈ",
-        ፌ: "ፈ",
-        ፍ: "ፈ",
-        ፎ: "ፈ",
-        // ፐ (Pe)
-        ፐ: "ፐ",
-        ፑ: "ፐ",
-        ፒ: "ፐ",
-        ፓ: "ፐ",
-        ፔ: "ፐ",
-        ፕ: "ፐ",
-        ፖ: "ፐ",
       };
 
-      // 2. LOAD DATA
       async function fetchProverbs() {
         try {
           const response = await fetch("./proverbs.json");
           proverbsList = await response.json();
+          currentView = proverbsList;
           getRandomProverb();
-          generateAlphabetFilters(); // This creates the buttons
-          displayProverbs(proverbsList); // This shows the list
+          generateAlphabetFilters();
+          displayProverbs(currentView);
         } catch (error) {
-          console.error("Error loading proverbs:", error);
+          console.error("Error loading JSON:", error);
         }
       }
 
-      // 3. CREATE BUTTONS (This logic hides "ም" and "ላ")
       function generateAlphabetFilters() {
         const letters = [
           ...new Set(
@@ -401,8 +205,10 @@
         ].sort();
 
         const container = document.getElementById("alphabet-filters");
+        if (!container) return;
+
         container.innerHTML =
-          '<button onclick="displayProverbs(proverbsList)" class="px-3 py-1 text-sm bg-stone-200 hover:bg-stone-300 rounded transition font-medium">ሁሉንም (All)</button>';
+          '<button onclick="resetToAll()" class="px-3 py-1 text-sm bg-stone-200 hover:bg-stone-300 rounded transition font-medium">ሁሉንም (All)</button>';
 
         letters.forEach((letter) => {
           if (!letter) return;
@@ -415,79 +221,89 @@
         });
       }
 
-      // 4. FILTER LOGIC
+      function resetToAll() {
+        currentView = proverbsList;
+        displayProverbs(currentView);
+      }
+
       function filterByLetter(letter) {
         const baseRequested = fidelGroups[letter] || letter;
-        const filtered = proverbsList.filter((p) => {
+        currentView = proverbsList.filter((p) => {
           const firstChar = p.proverb_amharic.trim().charAt(0);
           const baseFirstChar = fidelGroups[firstChar] || firstChar;
           return baseFirstChar === baseRequested;
         });
-        displayProverbs(filtered);
+        displayProverbs(currentView);
       }
 
-      // 5. SEARCH LOGIC
-      function filterProverbs() {
-        const query = document
-          .getElementById("search-input")
-          .value.toLowerCase();
-        const filtered = proverbsList.filter(
-          (p) =>
-            p.proverb_amharic.toLowerCase().includes(query) ||
-            p.proverb_english.toLowerCase().includes(query),
-        );
-        displayProverbs(filtered);
-      }
+      // --- LIKING AND SAVING LOGIC (The part that was 'not defined') ---
+      window.toggleAction = function (id, storageKey) {
+        console.log("Click registered for ID:", id);
+        let list = JSON.parse(localStorage.getItem(storageKey) || "[]");
+        const stringId = String(id);
 
-      // 6. DISPLAY LOGIC
-      function displayProverbs(items) {
-        // Note the "s" in proverbs-grid to match your HTML
-        const grid = document.getElementById("proverbs-grid");
-        grid.innerHTML = "";
-
-        if (items.length === 0) {
-          grid.innerHTML =
-            '<p class="col-span-full text-center text-stone-500 py-10">ምንም ቅርስ አልተገኘም (No matching proverbs found)</p>';
-          return;
+        if (list.includes(stringId)) {
+          list = list.filter((itemIdx) => itemIdx !== stringId);
+        } else {
+          list.push(stringId);
         }
 
+        localStorage.setItem(storageKey, JSON.stringify(list));
+        displayProverbs(currentView);
+      };
+
+      function displayProverbs(items) {
+        const grid = document.getElementById("proverbs-grid");
+        if (!grid) return;
+        grid.innerHTML = "";
+
+        const liked = JSON.parse(localStorage.getItem("likedProverbs") || "[]");
+        const saved = JSON.parse(localStorage.getItem("savedProverbs") || "[]");
+
         items.forEach((item) => {
+          const itemId = String(item.id);
+          const isLiked = liked.includes(itemId);
+          const isSaved = saved.includes(itemId);
+
           const card = document.createElement("div");
           card.className =
-            "bg-white border border-stone-200 rounded-lg p-5 space-y-3 shadow-sm hover:border-amber-400 transition duration-150";
+            "bg-white border border-stone-200 rounded-lg p-5 space-y-3 shadow-sm hover:border-amber-400 transition relative";
 
           card.innerHTML = `
-            <div class="flex justify-between items-start">
-                <span class="text-[10px] bg-stone-100 text-stone-500 px-2 py-0.5 rounded uppercase font-bold tracking-wider">
-                    ${item.category || "Wisdom"}
-                </span>
-            </div>
-            <p class="text-xl font-bold text-stone-800">${item.proverb_amharic}</p>
-            <p class="text-md italic text-stone-600">${item.proverb_english}</p>
-            <div class="pt-2 border-t border-stone-100 space-y-1">
-                <p class="text-sm text-stone-500">
-                    <strong class="text-stone-700">ትርጉም:</strong> ${item.meaning_amharic || "..."}
-                </p>
-                <p class="text-sm text-stone-500">
-                    <strong class="text-stone-700">Meaning:</strong> ${item.meaning_english || "..."}
-                </p>
-            </div>
-        `;
+                <div class="flex justify-between items-start">
+                    <span class="text-[10px] bg-stone-100 text-stone-500 px-2 py-0.5 rounded uppercase font-bold tracking-wider">
+                        ${item.category || "Wisdom"}
+                    </span>
+                    <div class="flex gap-4">
+                        <button onclick="toggleAction('${itemId}', 'likedProverbs')" 
+                                class="text-2xl transition-transform active:scale-125 cursor-pointer ${isLiked ? "text-red-500" : "text-stone-300"}">
+                            ${isLiked ? "❤️" : "🤍"}
+                        </button>
+                        <button onclick="toggleAction('${itemId}', 'savedProverbs')" 
+                                class="text-2xl transition-transform active:scale-125 cursor-pointer ${isSaved ? "text-blue-500" : "text-stone-300"}">
+                            ${isSaved ? "🔖" : "📑"}
+                        </button>
+                    </div>
+                </div>
+                <p class="text-xl font-bold text-stone-800">${item.proverb_amharic}</p>
+                <p class="text-md italic text-stone-600">${item.proverb_english}</p>
+            `;
           grid.appendChild(card);
         });
       }
 
       function getRandomProverb() {
-        if (proverbsList.length === 0) return;
+        const dailyAm = document.getElementById("daily-amharic");
+        if (!dailyAm || proverbsList.length === 0) return;
         const randomItem =
           proverbsList[Math.floor(Math.random() * proverbsList.length)];
-        document.getElementById("daily-amharic").innerText =
-          randomItem.proverb_amharic;
+        dailyAm.innerText = randomItem.proverb_amharic;
         document.getElementById("daily-english").innerText =
           randomItem.proverb_english;
       }
 
       window.onload = fetchProverbs;
+      console.log("✅ SCRIPT LOADED SUCCESSFULLY");
     </script>
   </body>
 </html>

@@ -1,6 +1,6 @@
 [
   {
-    "id": "ሀ_1",
+    "id": "1",
     "proverb_amharic": "ሀብት ሰጪው እግዚአብሔር ነው።",
     "proverb_english": "God is the giver of wealth.",
     "meaning_amharic": "እውነተኛ ብልጽግና ከፈጣሪ የሚገኝ ስጦታ ነው።",
@@ -9,7 +9,7 @@
     "category": "Faith"
   },
   {
-    "id": "ሀ_2",
+    "id": "2",
     "proverb_amharic": "ሀምሳ ሎሚ ለሀምሳ ሰው ጌጡ ለአንድ ሰው ሸክሙ",
     "proverb_english": "Fifty lemons are an ornament for fifty people, but a burden for one person.",
     "meaning_amharic": "የጋራ ችግር በብዙዎች ሲከፋፈል ይቀልላል፤ ለአንድ ሰው ብቻ ሲሆን ግን ይከብዳል። የትብብርን አስፈላጊነት ይገልጻል።",
@@ -18,7 +18,7 @@
     "category": "Unity"
   },
   {
-    "id": "ሀ_3",
+    "id": "3",
     "proverb_amharic": "ሀብታም ያፈራል ሀሰተኛ ይረታል",
     "proverb_english": "The wealthy produces; the liar is defeated.",
     "meaning_amharic": "ታታሪነት ውጤት ያስገኛል፤ ውሸት ግን መጨረሻው ውድቀት መሆኑን ይገልጻል።",
@@ -27,7 +27,7 @@
     "category": "Wisdom"
   },
   {
-    "id": "ሀ_4",
+    "id": "4",
     "proverb_amharic": "ሀብት አይቀር ከድሀም ቤት",
     "proverb_english": "Wealth does not stay away from a poor person's house.",
     "meaning_amharic": "ድህነት ዘላቂ አይደለም፤ ማንኛውም ሰው በጥረቱ ሀብታም ሊሆን እንደሚችል ተስፋ የሚሰጥ ምሳሌ ነው።",
@@ -36,7 +36,7 @@
     "category": "Hope"
   },
   {
-    "id": "ሀ_5",
+    "id": "5",
     "proverb_amharic": "ሀገርን ሲስቡት ዛፍ ይወዘውዛል",
     "proverb_english": "When the country is pulled, the trees shake.",
     "meaning_amharic": "በሀገር ላይ የሚመጣ ነገር ሁሉንም ዜጋ እንደሚነካ፤ ትልልቅ ችግሮች ትናንሾችንም እንደሚያውኩ ያሳያል።",
@@ -45,7 +45,7 @@
     "category": "Unity"
   },
   {
-    "id": "ሀ_6",
+    "id": "6",
     "proverb_amharic": "ሀሜት አይቀር ከድሁም ቤት",
     "proverb_english": "Gossip does not stay away even from a poor person's house.",
     "meaning_amharic": "ሰው ምንም ቢኖረው ወይም ባይኖረው ከሀሜት እንደማያመልጥ፤ ሰዎች ስለማንኛውም ሰው ማውራታቸው እንደማይቀር ይገልጻል።",
@@ -54,7 +54,7 @@
     "category": "Social"
   },
   {
-    "id": "ሀ_7",
+    "id": "7",
     "proverb_amharic": "ሀምሌ ቢያበራ በጋ ይመስላል",
     "proverb_english": "If July clears up, it looks like the dry season.",
     "meaning_amharic": "አንዳንድ ጊዜ ነገሮች ካሉበት ተጨባጭ ሁኔታ ውጭ ሌላ መስለው ሊታዩ እንደሚችሉ፤ ጊዜያዊ ሁኔታዎች ሊያታልሉ እንደሚችሉ ያሳያል።",
@@ -63,7 +63,7 @@
     "category": "Wisdom"
   },
   {
-    "id": "ሀ_8",
+    "id": "8",
     "proverb_amharic": "ሀሰተኛ ምስክር ጉልበት ይሰብር",
     "proverb_english": "A false witness breaks one's strength.",
     "meaning_amharic": "ውሸትና የሀሰት ምስክርነት በሰው ሕይወትና ፍትህ ላይ የሚያደርሰውን ከባድ ጉዳት ይገልጻል።",
