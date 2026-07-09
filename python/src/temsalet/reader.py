@@ -1,6 +1,25 @@
 import os
 import json
 import random
+# This mapping groups all 7 variations into one "Base" letter
+FIDEL_GROUPS = {
+    # 'ሀ' family
+    'ሀ': 'ሀ', 'ሁ': 'ሀ', 'ሂ': 'ሀ', 'ሃ': 'ሀ', 'ሄ': 'ሀ', 'ህ': 'ሀ', 'ሆ': 'ሀ',
+    # 'ለ' family
+    'ለ': 'ለ', 'ሉ': 'ለ', 'ሊ': 'ለ', 'ላ': 'ለ', 'ሌ': 'ለ', 'ል': 'ለ', 'ሎ': 'ለ',
+    # 'ሐ' family
+    'ሐ': 'ሐ', 'ሑ': 'ሐ', 'ሒ': 'ሐ', 'ሓ': 'ሐ', 'ሔ': 'ሐ', 'ሕ': 'ሐ', 'ሖ': 'ሐ',
+    # 'መ' family
+    'መ': 'መ', 'ሙ': 'መ', 'ሚ': 'መ', 'ማ': 'መ', 'ሜ': 'መ', 'ም': 'መ', 'ሞ': 'መ',
+    # 'ሠ' family
+    'ሠ': 'ሠ', 'ሡ': 'ሠ', 'ሢ': 'ሠ', 'ሣ': 'ሠ', 'ሤ': 'ሠ', 'ሥ': 'ሠ', 'ሦ': 'ሠ',
+    # 'ረ' family
+    'ረ': 'ረ', 'ሩ': 'ረ', 'ሪ': 'ረ', 'ራ': 'ረ', 'ሬ': 'ረ', 'ር': 'ረ', 'ሮ': 'ረ',
+    # 'ሰ' family
+    'ሰ': 'ሰ', 'ሱ': 'ሰ', 'ሲ': 'ሰ', 'ሳ': 'ሰ', 'ሴ': 'ሰ', 'ስ': 'ሰ', 'ሶ': 'ሰ',
+    # 'ሸ' family
+    'ሸ': 'ሸ', 'ሹ': 'ሸ', 'ሺ': 'ሸ', 'ሻ': 'ሸ', 'ሼ': 'ሸ', 'ሽ': 'ሸ', 'ሾ': 'ሸ',
+}
 from typing import List, Dict, Any, Optional
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -53,15 +72,30 @@ def get_random_proverb() -> Optional[Dict[str, Any]]:
     return random.choice(proverbs) if proverbs else None
 
 def search_proverbs(query: str, limit: int = 50) -> List[Dict[str, Any]]:
-    """Searches across all proverbs, limiting the search results size."""
+    """Searches across all proverbs using the Fidel grouping logic."""
     query = query.lower()
+    
+    # If someone searches 'ም', we treat it as 'መ'
+    base_query = FIDEL_GROUPS.get(query, query) 
+
     proverbs = load_all_proverbs(skip=0, limit=100000)
     results = []
+    
     for p in proverbs:
-        if (query in p.get("proverb_amharic", "").lower() or
+        amharic_text = p.get("proverb_amharic", "")
+        # Get the first letter of the proverb
+        first_char = amharic_text[0] if amharic_text else ""
+        # Convert that first letter to its "Base" family (e.g. 'ም' -> 'መ')
+        base_first_char = FIDEL_GROUPS.get(first_char, first_char)
+
+        # Logic: Match if the query is in the text 
+        # OR if the first letter belongs to the family being searched
+        if (query in amharic_text.lower() or 
             query in p.get("proverb_english", "").lower() or
-            query in p.get("category", "").lower()):
+            base_query == base_first_char):
+            
             results.append(p)
             if len(results) >= limit:
                 break
+                
     return results

@@ -277,5 +277,148 @@
     "meaning_english": "A person's legacy and reputation survive long after their physical death; doing good ensures you are remembered.",
     "origin": "Traditional",
     "category": "Legacy"
+  },
+  {
+    "id": "መ_12",
+    "proverb_amharic": "ምክር ለሰሚው ስንቅ ነው",
+    "proverb_english": "Advice is a provision for the one who listens.",
+    "meaning_amharic": "ጥሩ ምክርን ሰምቶ የሚቀበል ሰው ለህይወቱ የሚጠቅመውን ስንቅ እንደያዘ ይቆጠራል።",
+    "meaning_english": "Good advice acts as a valuable resource for those who are willing to listen and apply it to their lives.",
+    "origin": "Traditional",
+    "category": "Wisdom"
+  },
+  {
+    "id": "አ_1",
+    "proverb_amharic": "አመት የማያበላ አመት ያጠላ",
+    "proverb_english": "A year that does not feed is a year that causes grudges.",
+    "meaning_amharic": "አንድ ወቅት ወይም አመት መልካም ፍሬ ካላፈራ በሰዎች መካከል ቅሬታና ጥል እንደሚፈጥር ይገልጻል።",
+    "meaning_english": "If a season or a year is unproductive, it leads to dissatisfaction and conflict among people.",
+    "origin": "Traditional",
+    "category": "Wisdom"
+  },
+  {
+    "id": "አ_2",
+    "proverb_amharic": "አመድ በዱቂት ይስቃል",
+    "proverb_english": "Ash laughs at fine dust.",
+    "meaning_amharic": "ራሱ ችግር ያለበት ሰው ሌላውን ዝቅ አድርጎ ሲያይ ወይም ሲሳለቅበት የሚነገር ምሳሌ ነው።",
+    "meaning_english": "It is used when someone who has their own flaws or problems mocks or looks down on someone else in a similar or slightly worse situation.",
+    "origin": "Traditional",
+    "category": "Irony"
+  },
+  {
+    "id": "አ_3",
+    "proverb_amharic": "አመድ በዱቂት ሲሳቅ ልቡ በንፋስ ውልቁ",
+    "proverb_english": "While ash laughs at fine dust, its heart is blown away by the wind.",
+    "meaning_amharic": "ሌላውን ዝቅ አድርጎ የሚመለከት ሰው የራሱን ደካማነት ዘንግቶ በድንገተኛ ችግር ሊጠቃ እንደሚችል ያሳያል።",
+    "meaning_english": "Someone who mocks others often forgets their own vulnerability and can be easily undone by circumstances.",
+    "origin": "Traditional",
+    "category": "Wisdom"
+  },
+  {
+    "id": "አ_4",
+    "proverb_amharic": "አመለኛ ሎሌህን በሰው ፊት አትዘዝው",
+    "proverb_english": "Do not command your temperamental servant in front of others.",
+    "meaning_amharic": "ባህሪው አስቸጋሪ የሆነን ሰው በሰው ፊት ማዘዝ ግጭት ሊፈጥር ስለሚችል ጥንቃቄ ማድረግ እንደሚገባ ይመክራል።",
+    "meaning_english": "It advises being careful when dealing with difficult people in public, as ordering them around might trigger a conflict or embarrassment.",
+    "origin": "Traditional",
+    "category": "Social"
+  },
+  {
+    "id": "አ_5",
+    "proverb_amharic": "አማትና ምራት ሳይስማሙ መሬት",
+    "proverb_english": "Without agreement between mother-in-law and daughter-in-law, there is only trouble.",
+    "meaning_amharic": "በቤተሰብ ውስጥ በተለይም በአማትና በምራት መካከል ሰላም ከሌለ የቤቱ ሁኔታ አስቸጋሪ እንደሚሆን ይገልጻል።",
+    "meaning_english": "It emphasizes that lack of harmony in key family relationships makes the domestic environment very difficult and unpleasant.",
+    "origin": "Traditional",
+    "category": "Family"
+  },
+
+  {
+    "id": "101",
+    "proverb_amharic": "ሀሜትና ጅራት በስተኋላ ነው",
+    "proverb_english": "Gossip and a tail are both behind you.",
+    "meaning_amharic": "ሰው በሌለበት ማማት መጥፎ ነው፤ ድርጊቱም ከኋላ የሚቀር ነው።",
+    "meaning_english": "Gossip happens behind one's back, much like a tail follows behind.",
+    "category": "Social"
+  },
+  {
+    "id": "102",
+    "proverb_amharic": "ሀምሌ ቢያባራ በጋ ይመስላል",
+    "proverb_english": "If July stops raining, it feels like summer.",
+    "meaning_amharic": "አንድ መጥፎ ነገር ለጊዜው ሲቆም ሁሉም ነገር የተስተካከለ ይመስላል።",
+    "meaning_english": "When a difficult period pauses, it gives a false sense of total relief.",
+    "category": "Nature"
+  },
+  {
+    "id": "103",
+    "proverb_amharic": "ለሂያጅ የለውም ወዳጅ",
+    "proverb_english": "A traveler has no true friend.",
+    "meaning_amharic": "የሚሄድ ሰው ቋሚ ወዳጅነት ለመመስረት ይቸገራል።",
+    "meaning_english": "It is hard to maintain deep relationships with someone who is always moving.",
+    "category": "Relationships"
+  },
+  {
+    "id": "104",
+    "proverb_amharic": "ሰነፍ ሴት ያገባ በሬው በሰኔ ገደል የገባ",
+    "proverb_english": "He who marries a lazy woman, his ox falls into a cliff in June.",
+    "meaning_amharic": "ሰነፍ ረዳት ያለው ሰው በስራው ይጎዳል።",
+    "meaning_english": "A lazy partner or helper leads to disaster during critical times.",
+    "category": "Work"
+  },
+  {
+    "id": "105",
+    "proverb_amharic": "ሰነፍ በዓል ያበዛል",
+    "proverb_english": "A lazy person multiplies holidays.",
+    "meaning_amharic": "መስራት የማይፈልግ ሰው ምክንያት ያበዛል።",
+    "meaning_english": "Someone who wants to avoid work will always find an excuse to celebrate or rest.",
+    "category": "Discipline"
+  },
+  {
+    "id": "106",
+    "proverb_amharic": "ሰነፍ ገበሬ በሰኔ ይሞታል",
+    "proverb_english": "A lazy farmer dies in June.",
+    "meaning_amharic": "በጊዜው ያልሰራ በችግር ጊዜ ይጎዳል።",
+    "meaning_english": "If you don't work during the planting season, you will starve during the harvest.",
+    "category": "Work"
+  },
+  {
+    "id": "107",
+    "proverb_amharic": "ሰው በዋለበት ውሀ በወረደበት",
+    "proverb_english": "Where man stays, where water flows.",
+    "meaning_amharic": "ሰው ከአካባቢው ጋር መላመድ አለበት።",
+    "meaning_english": "One must adapt to the circumstances and environments they find themselves in.",
+    "category": "Life"
+  },
+  {
+    "id": "108",
+    "proverb_amharic": "ሰው ቢማር ቄስ እንጂ መላክ አይሆንም",
+    "proverb_english": "Even if a man learns, he becomes a priest, not an angel.",
+    "meaning_amharic": "ሰው ምንም ቢማር ፍጹም ሊሆን አይችልም።",
+    "meaning_english": "Education improves a person but does not make them perfect or divine.",
+    "category": "Wisdom"
+  },
+  {
+    "id": "109",
+    "proverb_amharic": "ሰውን ሲያማ ለእኔ ብለህ ስማ",
+    "proverb_english": "When they gossip about others, listen as if it's about you.",
+    "meaning_amharic": "ሌላውን የሚያማ አንተንም እንደሚያማህ እወቅ።",
+    "meaning_english": "If someone gossips to you about others, they will gossip to others about you.",
+    "category": "Social"
+  },
+  {
+    "id": "110",
+    "proverb_amharic": "ሽማኔ ድውሩን ባለስልጣን ክብሩን",
+    "proverb_english": "A weaver his loom, an official his honor.",
+    "meaning_amharic": "እያንዳንዱ ሰው ለሙያውና ለክብሩ መጠንቀቅ አለበት።",
+    "meaning_english": "Everyone values and protects what is most important to their identity and livelihood.",
+    "category": "Honor"
+  },
+  {
+    "id": "111",
+    "proverb_amharic": "ቀላጅ የሰይጣን ወዳጅ",
+    "proverb_english": "A joker is a friend of the devil.",
+    "meaning_amharic": "ነገር አቅላላጭ ሰው መጨረሻው አያምርም።",
+    "meaning_english": "Constant mockery and joking can lead to malice and trouble.",
+    "category": "Character"
   }
 ]

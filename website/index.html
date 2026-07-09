@@ -1,173 +1,493 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="am">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temsalet - Ethiopian Proverbs</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Temsalet - Ethiopian Proverbs</title>
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
+  <body
+    class="bg-amber-50/30 text-stone-800 min-h-screen flex flex-col justify-between font-sans"
+  >
+    <!-- Header -->
+    <header
+      class="border-b border-amber-100 bg-white/80 backdrop-blur sticky top-0 z-50"
+    >
+      <div
+        class="max-w-4xl mx-auto px-4 py-4 flex justify-between items-center"
+      >
+        <h1 class="text-2xl font-bold text-amber-700 tracking-wide">
+          ተምሳሌት
+          <span class="text-stone-500 font-normal text-lg">| Temsalet</span>
+        </h1>
+        <a
+          href="https://github.com/beldados/temsalet"
+          target="_blank"
+          class="text-sm bg-stone-800 hover:bg-stone-700 text-white px-3 py-1.5 rounded-md transition"
+          >GitHub</a
+        >
+      </div>
+    </header>
 
-<body class="bg-amber-50/30 text-stone-800 min-h-screen flex flex-col justify-between font-sans">
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-4 py-8 w-full flex-grow space-y-8">
+      <!-- Intro -->
+      <div class="text-center space-y-2">
+        <h2 class="text-3xl font-extrabold text-stone-950">የአበው ምክርና ጥበብ</h2>
+        <p class="text-stone-600 max-w-xl mx-auto">
+          Explore, search, and preserve the rich wisdom embedded in traditional
+          Ethiopian proverbs.
+        </p>
+      </div>
 
-  <!-- Header -->
-  <header class="border-b border-amber-100 bg-white/80 backdrop-blur sticky top-0 z-50">
-    <div class="max-w-4xl mx-auto px-4 py-4 flex justify-between items-center">
-      <h1 class="text-2xl font-bold text-amber-700 tracking-wide">ተምሳሌት <span
-          class="text-stone-500 font-normal text-lg">| Temsalet</span></h1>
-      <a href="https://github.com/beldados/temsalet" target="_blank"
-        class="text-sm bg-stone-800 hover:bg-stone-700 text-white px-3 py-1.5 rounded-md transition">GitHub</a>
-    </div>
-  </header>
+      <!-- Proverb of the Day Card -->
+      <div
+        class="bg-white border border-amber-200/60 rounded-xl p-6 shadow-sm relative overflow-hidden"
+      >
+        <div
+          class="absolute top-0 left-0 h-1 w-full bg-gradient-to-r from-amber-500 to-yellow-500"
+        ></div>
+        <span
+          class="text-xs font-semibold tracking-wider text-amber-600 uppercase"
+          >የዕለቱ ምሳሌ • Proverb of the Day</span
+        >
+        <div class="mt-4 space-y-3">
+          <p id="daily-amharic" class="text-2xl font-bold text-stone-900">
+            ጭነት...
+          </p>
+          <p id="daily-english" class="text-lg italic text-stone-600">
+            Loading...
+          </p>
+          <div class="pt-4 border-t border-stone-100 space-y-1">
+            <p class="text-sm text-stone-500">
+              <strong class="text-stone-700">ትርጉም:</strong>
+              <span id="daily-meaning-am"></span>
+            </p>
+            <p class="text-sm text-stone-500">
+              <strong class="text-stone-700">Meaning:</strong>
+              <span id="daily-meaning-en"></span>
+            </p>
+          </div>
+        </div>
+        <button
+          onclick="getRandomProverb()"
+          class="mt-4 text-xs bg-amber-100 hover:bg-amber-200 text-amber-800 px-3 py-1.5 rounded-md transition font-medium"
+        >
+          ቀይር • New Proverb
+        </button>
+      </div>
 
-  <!-- Main Content -->
-  <main class="max-w-4xl mx-auto px-4 py-8 w-full flex-grow space-y-8">
+      <!-- Search and Filter Section -->
+      <div class="space-y-4">
+        <!-- Search Input -->
+        <input
+          type="text"
+          id="search-input"
+          oninput="filterProverbs()"
+          placeholder="Search proverbs, translations, or categories..."
+          class="w-full px-4 py-3 border border-stone-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500 bg-white"
+        />
 
-    <!-- Intro -->
-    <div class="text-center space-y-2">
-      <h2 class="text-3xl font-extrabold text-stone-950">የአበው ምክርና ጥበብ</h2>
-      <p class="text-stone-600 max-w-xl mx-auto">Explore, search, and preserve the rich wisdom embedded in traditional
-        Ethiopian proverbs.</p>
-    </div>
-
-    <!-- Proverb of the Day Card -->
-    <div class="bg-white border border-amber-200/60 rounded-xl p-6 shadow-sm relative overflow-hidden">
-      <div class="absolute top-0 left-0 h-1 w-full bg-gradient-to-r from-amber-500 to-yellow-500"></div>
-      <span class="text-xs font-semibold tracking-wider text-amber-600 uppercase">የዕለቱ ምሳሌ • Proverb of the Day</span>
-      <div class="mt-4 space-y-3">
-        <p id="daily-amharic" class="text-2xl font-bold text-stone-900">ጭነት...</p>
-        <p id="daily-english" class="text-lg italic text-stone-600">Loading...</p>
-        <div class="pt-4 border-t border-stone-100 space-y-1">
-          <p class="text-sm text-stone-500"><strong class="text-stone-700">ትርጉም:</strong> <span
-              id="daily-meaning-am"></span></p>
-          <p class="text-sm text-stone-500"><strong class="text-stone-700">Meaning:</strong> <span
-              id="daily-meaning-en"></span></p>
+        <!-- Fidel Alphabet Buttons -->
+        <div
+          class="flex flex-wrap gap-1.5 justify-center py-2"
+          id="alphabet-filters"
+        >
+          <!-- Will be dynamically generated -->
         </div>
       </div>
-      <button onclick="getRandomProverb()"
-        class="mt-4 text-xs bg-amber-100 hover:bg-amber-200 text-amber-800 px-3 py-1.5 rounded-md transition font-medium">ቀይር
-        • New Proverb</button>
-    </div>
 
-    <!-- Search and Filter Section -->
-    <div class="space-y-4">
-      <!-- Search Input -->
-      <input type="text" id="search-input" oninput="filterProverbs()"
-        placeholder="Search proverbs, translations, or categories..."
-        class="w-full px-4 py-3 border border-stone-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500 bg-white">
-
-      <!-- Fidel Alphabet Buttons -->
-      <div class="flex flex-wrap gap-1.5 justify-center py-2" id="alphabet-filters">
-        <!-- Will be dynamically generated -->
+      <!-- Proverbs Grid List -->
+      <div id="proverbs-grid" class="grid gap-4 md:grid-cols-2">
+        <!-- Dynamically populated -->
       </div>
-    </div>
+    </main>
 
-    <!-- Proverbs Grid List -->
-    <div id="proverbs-grid" class="grid gap-4 md:grid-cols-2">
-      <!-- Dynamically populated -->
-    </div>
+    <!-- Footer -->
+    <footer
+      class="border-t border-stone-200/60 bg-stone-100 py-6 text-center text-sm text-stone-500"
+    >
+      <p>© 2026 Temsalet Project. Built for Ethiopian Wisdom preservation.</p>
+    </footer>
 
-  </main>
+    <!-- Frontend Logic -->
+    <script>
+      let proverbsList = [];
 
-  <!-- Footer -->
-  <footer class="border-t border-stone-200/60 bg-stone-100 py-6 text-center text-sm text-stone-500">
-    <p>© 2026 Temsalet Project. Built for Ethiopian Wisdom preservation.</p>
-  </footer>
+      // 1. THE MAP (The most important part)
+      const fidelGroups = {
+        // ሀ (Ha)
+        ሀ: "ሀ",
+        ሁ: "ሀ",
+        ሂ: "ሀ",
+        ሃ: "ሀ",
+        ሄ: "ሀ",
+        ህ: "ሀ",
+        ሆ: "ሀ",
+        // ለ (Le)
+        ለ: "ለ",
+        ሉ: "ለ",
+        ሊ: "ለ",
+        ላ: "ለ",
+        ሌ: "ለ",
+        ል: "ለ",
+        ሎ: "ለ",
+        // ሐ (Hha)
+        ሐ: "ሐ",
+        ሑ: "ሐ",
+        ሒ: "ሐ",
+        ሓ: "ሐ",
+        ሔ: "ሐ",
+        ሕ: "ሐ",
+        ሖ: "ሐ",
+        // መ (Me)
+        መ: "መ",
+        ሙ: "መ",
+        ሚ: "መ",
+        ማ: "መ",
+        ሜ: "መ",
+        ም: "መ",
+        ሞ: "መ",
+        // ሠ (Se)
+        ሠ: "ሠ",
+        ሡ: "ሠ",
+        ሢ: "ሠ",
+        ሣ: "ሠ",
+        ሤ: "ሠ",
+        ሥ: "ሠ",
+        ሦ: "ሠ",
+        // ረ (Re)
+        ረ: "ረ",
+        ሩ: "ረ",
+        ሪ: "ረ",
+        ራ: "ረ",
+        ሬ: "ረ",
+        ር: "ረ",
+        ሮ: "ረ",
+        // ሰ (Se)
+        ሰ: "ሰ",
+        ሱ: "ሰ",
+        ሲ: "ሰ",
+        ሳ: "ሰ",
+        ሴ: "ሰ",
+        ስ: "ሰ",
+        ሶ: "ሰ",
+        // ሸ (She)
+        ሸ: "ሸ",
+        ሹ: "ሸ",
+        ሺ: "ሸ",
+        ሻ: "ሸ",
+        ሼ: "ሸ",
+        ሽ: "ሸ",
+        ሾ: "ሸ",
+        // ቀ (Qe)
+        ቀ: "ቀ",
+        ቁ: "ቀ",
+        ቂ: "ቀ",
+        ቃ: "ቀ",
+        ቄ: "ቀ",
+        ቅ: "ቀ",
+        ቆ: "ቀ",
+        // በ (Be)
+        በ: "በ",
+        ቡ: "በ",
+        ቢ: "በ",
+        ባ: "በ",
+        ቤ: "በ",
+        ብ: "በ",
+        ቦ: "በ",
+        // ተ (Te)
+        ተ: "ተ",
+        ቱ: "ተ",
+        ቲ: "ተ",
+        ታ: "ተ",
+        ቴ: "ተ",
+        ት: "ተ",
+        ቶ: "ተ",
+        // ቸ (Che)
+        ቸ: "ቸ",
+        ሹ: "ቸ",
+        ቺ: "ቸ",
+        ቻ: "ቸ",
+        ቼ: "ቸ",
+        ች: "ቸ",
+        ቾ: "ቸ",
+        // ኀ (Ha - rare)
+        ኀ: "ኀ",
+        ኁ: "ኀ",
+        ኂ: "ኀ",
+        ኃ: "ኀ",
+        ኄ: "ኀ",
+        ኅ: "ኀ",
+        ኆ: "ኀ",
+        // ነ (Ne)
+        ነ: "ነ",
+        ኑ: "ነ",
+        ኒ: "ነ",
+        ና: "ነ",
+        ኔ: "ነ",
+        ን: "ነ",
+        ኖ: "ነ",
+        // ኘ (Nye)
+        ኘ: "ኘ",
+        ኙ: "ኘ",
+        ኚ: "ኘ",
+        ኛ: "ኘ",
+        ኜ: "ኘ",
+        ኝ: "ኘ",
+        ኞ: "ኘ",
+        // አ (A)
+        አ: "አ",
+        ኡ: "አ",
+        ኢ: "አ",
+        ኣ: "አ",
+        ኤ: "አ",
+        እ: "አ",
+        ኦ: "አ",
+        // ከ (Ke)
+        ከ: "ከ",
+        ኩ: "ከ",
+        ኪ: "ከ",
+        ካ: "ከ",
+        ኬ: "ከ",
+        ክ: "ከ",
+        ኮ: "ከ",
+        // ወ (We)
+        ወ: "ወ",
+        ዉ: "ወ",
+        ዊ: "ወ",
+        ዋ: "ወ",
+        ዌ: "ወ",
+        ው: "ወ",
+        ዎ: "ወ",
+        // ዐ (A - Ain)
+        ዐ: "ዐ",
+        ዑ: "ዐ",
+        ዒ: "ዐ",
+        ዓ: "ዐ",
+        ዔ: "ዐ",
+        ዕ: "ዐ",
+        ዖ: "ዐ",
+        // ዘ (Ze)
+        ዘ: "ዘ",
+        ዙ: "ዘ",
+        ዚ: "ዘ",
+        ዛ: "ዘ",
+        ዜ: "ዘ",
+        ዝ: "ዘ",
+        ዞ: "ዘ",
+        // ዠ (Zhe)
+        ዠ: "ዠ",
+        ዡ: "ዠ",
+        ዢ: "ዠ",
+        ዣ: "ዠ",
+        ዤ: "ዠ",
+        ዥ: "ዠ",
+        ዦ: "ዠ",
+        // የ (Ye)
+        የ: "የ",
+        ዩ: "የ",
+        ዪ: "የ",
+        ያ: "የ",
+        ዬ: "የ",
+        ይ: "የ",
+        ዮ: "የ",
+        // ደ (De)
+        ደ: "ደ",
+        ዱ: "ደ",
+        ዲ: "ደ",
+        ዳ: "ደ",
+        ዴ: "ደ",
+        ድ: "ደ",
+        ዶ: "ደ",
+        // ጀ (Je)
+        ጀ: "ጀ",
+        ጁ: "ጀ",
+        ጂ: "ጀ",
+        ጃ: "ጀ",
+        ጄ: "ጀ",
+        ጅ: "ጀ",
+        ጆ: "ጀ",
+        // ገ (Ge)
+        ገ: "ገ",
+        ጉ: "ገ",
+        ጊ: "ገ",
+        ጋ: "ገ",
+        ጌ: "ገ",
+        ግ: "ገ",
+        ጎ: "ገ",
+        // ጠ (T'e)
+        ጠ: "ጠ",
+        ጡ: "ጠ",
+        ጢ: "ጠ",
+        ጣ: "ጠ",
+        ጤ: "ጠ",
+        ጥ: "ጠ",
+        ጦ: "ጠ",
+        // ጨ (Ch'e)
+        ጨ: "ጨ",
+        ጩ: "ጨ",
+        ጪ: "ጨ",
+        ጫ: "ጨ",
+        ጬ: "ጨ",
+        ጭ: "ጨ",
+        ጮ: "ጨ",
+        // ጰ (P'e)
+        ጰ: "ጰ",
+        ጱ: "ጰ",
+        ጲ: "ጰ",
+        ጳ: "ጰ",
+        ጴ: "ጰ",
+        ጵ: "ጰ",
+        ጶ: "ጰ",
+        // ጸ (Tse)
+        ጸ: "ጸ",
+        ጹ: "ጸ",
+        ጺ: "ጸ",
+        ጻ: "ጸ",
+        ጼ: "ጸ",
+        ጽ: "ጸ",
+        ጾ: "ጸ",
+        // ፀ (Tse - Sun)
+        ፀ: "ፀ",
+        ፁ: "ፀ",
+        ፂ: "ፀ",
+        ፃ: "ፀ",
+        ፄ: "ፀ",
+        ፅ: "ፀ",
+        ፆ: "ፀ",
+        // ፈ (Fe)
+        ፈ: "ፈ",
+        ፉ: "ፈ",
+        ፊ: "ፈ",
+        ፋ: "ፈ",
+        ፌ: "ፈ",
+        ፍ: "ፈ",
+        ፎ: "ፈ",
+        // ፐ (Pe)
+        ፐ: "ፐ",
+        ፑ: "ፐ",
+        ፒ: "ፐ",
+        ፓ: "ፐ",
+        ፔ: "ፐ",
+        ፕ: "ፐ",
+        ፖ: "ፐ",
+      };
 
-  <!-- Frontend Logic -->
-  <script>
-    let proverbsList = [];
-
-    // Load JSON data asynchronously
-    async function fetchProverbs() {
-      try {
-        const response = await fetch('./proverbs.json');
-        proverbsList = await response.json();
-
-        // Initialize Views
-        getRandomProverb();
-        generateAlphabetFilters();
-        displayProverbs(proverbsList);
-      } catch (error) {
-        console.error("Error loading proverbs dataset:", error);
+      // 2. LOAD DATA
+      async function fetchProverbs() {
+        try {
+          const response = await fetch("./proverbs.json");
+          proverbsList = await response.json();
+          getRandomProverb();
+          generateAlphabetFilters(); // This creates the buttons
+          displayProverbs(proverbsList); // This shows the list
+        } catch (error) {
+          console.error("Error loading proverbs:", error);
+        }
       }
-    }
 
-    // Display Proverb of the Day
-    function getRandomProverb() {
-      if (proverbsList.length === 0) return;
-      const randomItem = proverbsList[Math.floor(Math.random() * proverbsList.length)];
-      document.getElementById('daily-amharic').innerText = randomItem.proverb_amharic;
-      document.getElementById('daily-english').innerText = randomItem.proverb_english;
-      document.getElementById('daily-meaning-am').innerText = randomItem.meaning_amharic;
-      document.getElementById('daily-meaning-en').innerText = randomItem.meaning_english;
-    }
+      // 3. CREATE BUTTONS (This logic hides "ም" and "ላ")
+      function generateAlphabetFilters() {
+        const letters = [
+          ...new Set(
+            proverbsList.map((p) => {
+              const firstChar = p.proverb_amharic.trim().charAt(0);
+              return fidelGroups[firstChar] || firstChar;
+            }),
+          ),
+        ].sort();
 
-    // Dynamically build Alphabet filter buttons
-    function generateAlphabetFilters() {
-      // Extract the first character from Amharic proverbs
-      const letters = [...new Set(proverbsList.map(p => p.proverb_amharic.trim().charAt(0)))].sort();
-      const container = document.getElementById('alphabet-filters');
-      container.innerHTML = `<button onclick="displayProverbs(proverbsList)" class="px-3 py-1 text-sm bg-stone-200 hover:bg-stone-300 rounded transition font-medium">ሁሉም (All)</button>`;
+        const container = document.getElementById("alphabet-filters");
+        container.innerHTML =
+          '<button onclick="displayProverbs(proverbsList)" class="px-3 py-1 text-sm bg-stone-200 hover:bg-stone-300 rounded transition font-medium">ሁሉንም (All)</button>';
 
-      letters.forEach(letter => {
-        const btn = document.createElement('button');
-        btn.className = "px-3 py-1 text-sm bg-amber-100 hover:bg-amber-200 text-amber-900 rounded transition font-semibold";
-        btn.innerText = letter;
-        btn.onclick = () => filterByLetter(letter);
-        container.appendChild(btn);
-      });
-    }
-
-    // Filter proverbs list by starting character
-    function filterByLetter(letter) {
-      const filtered = proverbsList.filter(p => p.proverb_amharic.trim().startsWith(letter));
-      displayProverbs(filtered);
-    }
-
-    // Filter proverbs list via search input
-    function filterProverbs() {
-      const query = document.getElementById('search-input').value.toLowerCase();
-      const filtered = proverbsList.filter(p =>
-        p.proverb_amharic.toLowerCase().includes(query) ||
-        p.proverb_english.toLowerCase().includes(query) ||
-        (p.category && p.category.toLowerCase().includes(query))
-      );
-      displayProverbs(filtered);
-    }
-
-    // Render proverbs into the grid list
-    function displayProverbs(items) {
-      const grid = document.getElementById('proverbs-grid');
-      grid.innerHTML = '';
-
-      if (items.length === 0) {
-        grid.innerHTML = `<p class="col-span-full text-center text-stone-400 py-8">ምንም ምሳሌ አልተገኘም (No matching proverbs found)</p>`;
-        return;
+        letters.forEach((letter) => {
+          if (!letter) return;
+          const btn = document.createElement("button");
+          btn.className =
+            "px-3 py-1 text-sm bg-amber-100 hover:bg-amber-200 text-amber-800 rounded transition font-semibold";
+          btn.innerText = letter;
+          btn.onclick = () => filterByLetter(letter);
+          container.appendChild(btn);
+        });
       }
 
-      items.forEach(item => {
-        const card = document.createElement('div');
-        card.className = "bg-white border border-stone-200/80 rounded-lg p-5 space-y-3 shadow-sm hover:border-amber-300 transition duration-150";
-        card.innerHTML = `
-                    <div class="flex justify-between items-start">
-                        <span class="text-[10px] bg-stone-100 text-stone-600 px-2 py-0.5 rounded uppercase font-bold tracking-wider">${item.category || 'Wisdom'}</span>
-                    </div>
-                    <p class="text-xl font-bold text-stone-900">${item.proverb_amharic}</p>
-                    <p class="text-md italic text-stone-600">${item.proverb_english}</p>
-                    <div class="pt-2 border-t border-stone-50 space-y-1 text-xs text-stone-500">
-                        <p><strong>ትርጉም:</strong> ${item.meaning_amharic}</p>
-                        <p><strong>Meaning:</strong> ${item.meaning_english}</p>
-                    </div>
-                `;
-        grid.appendChild(card);
-      });
-    }
+      // 4. FILTER LOGIC
+      function filterByLetter(letter) {
+        const baseRequested = fidelGroups[letter] || letter;
+        const filtered = proverbsList.filter((p) => {
+          const firstChar = p.proverb_amharic.trim().charAt(0);
+          const baseFirstChar = fidelGroups[firstChar] || firstChar;
+          return baseFirstChar === baseRequested;
+        });
+        displayProverbs(filtered);
+      }
 
-    // Run fetch on mount
-    window.onload = fetchProverbs;
-  </script>
-</body>
+      // 5. SEARCH LOGIC
+      function filterProverbs() {
+        const query = document
+          .getElementById("search-input")
+          .value.toLowerCase();
+        const filtered = proverbsList.filter(
+          (p) =>
+            p.proverb_amharic.toLowerCase().includes(query) ||
+            p.proverb_english.toLowerCase().includes(query),
+        );
+        displayProverbs(filtered);
+      }
 
+      // 6. DISPLAY LOGIC
+      function displayProverbs(items) {
+        // Note the "s" in proverbs-grid to match your HTML
+        const grid = document.getElementById("proverbs-grid");
+        grid.innerHTML = "";
+
+        if (items.length === 0) {
+          grid.innerHTML =
+            '<p class="col-span-full text-center text-stone-500 py-10">ምንም ቅርስ አልተገኘም (No matching proverbs found)</p>';
+          return;
+        }
+
+        items.forEach((item) => {
+          const card = document.createElement("div");
+          card.className =
+            "bg-white border border-stone-200 rounded-lg p-5 space-y-3 shadow-sm hover:border-amber-400 transition duration-150";
+
+          card.innerHTML = `
+            <div class="flex justify-between items-start">
+                <span class="text-[10px] bg-stone-100 text-stone-500 px-2 py-0.5 rounded uppercase font-bold tracking-wider">
+                    ${item.category || "Wisdom"}
+                </span>
+            </div>
+            <p class="text-xl font-bold text-stone-800">${item.proverb_amharic}</p>
+            <p class="text-md italic text-stone-600">${item.proverb_english}</p>
+            <div class="pt-2 border-t border-stone-100 space-y-1">
+                <p class="text-sm text-stone-500">
+                    <strong class="text-stone-700">ትርጉም:</strong> ${item.meaning_amharic || "..."}
+                </p>
+                <p class="text-sm text-stone-500">
+                    <strong class="text-stone-700">Meaning:</strong> ${item.meaning_english || "..."}
+                </p>
+            </div>
+        `;
+          grid.appendChild(card);
+        });
+      }
+
+      function getRandomProverb() {
+        if (proverbsList.length === 0) return;
+        const randomItem =
+          proverbsList[Math.floor(Math.random() * proverbsList.length)];
+        document.getElementById("daily-amharic").innerText =
+          randomItem.proverb_amharic;
+        document.getElementById("daily-english").innerText =
+          randomItem.proverb_english;
+      }
+
+      window.onload = fetchProverbs;
+    </script>
+  </body>
 </html>
