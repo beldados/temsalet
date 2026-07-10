@@ -1,14 +1,14 @@
-const fs = require('fs');
-const path = require('path');
+const fs = require("fs");
+const path = require("path");
 
-const dataDir = path.join(__dirname, 'data');
+const dataDir = path.join(__dirname, "data");
 
 function loadProverbsByFidel(fidelLetter, skip = 0, limit = 100) {
   const filePath = path.join(dataDir, `${fidelLetter.trim()}.json`);
   if (!fs.existsSync(filePath)) return [];
 
   try {
-    const fileContent = fs.readFileSync(filePath, 'utf-8');
+    const fileContent = fs.readFileSync(filePath, "utf-8");
     const data = JSON.parse(fileContent);
     if (Array.isArray(data)) {
       return data.slice(skip, skip + limit);
@@ -25,11 +25,11 @@ function loadAllProverbs(skip = 0, limit = 100) {
   let allProverbs = [];
   const files = fs.readdirSync(dataDir);
 
-  files.forEach(file => {
-    if (file.endsWith('.json')) {
+  files.forEach((file) => {
+    if (file.endsWith(".json")) {
       const filePath = path.join(dataDir, file);
       try {
-        const fileContent = fs.readFileSync(filePath, 'utf-8');
+        const fileContent = fs.readFileSync(filePath, "utf-8");
         const data = JSON.parse(fileContent);
         if (Array.isArray(data)) {
           allProverbs = allProverbs.concat(data);
@@ -71,5 +71,27 @@ module.exports = {
   loadProverbsByFidel,
   loadAllProverbs,
   getRandomProverb,
-  searchProverbs
+  searchProverbs,
 };
+function toggleAction(id, storageKey) {
+  console.log("Button Clicked! ID:", id, "Action:", storageKey);
+
+  let list = JSON.parse(localStorage.getItem(storageKey) || "[]");
+  id = String(id);
+
+  if (list.includes(id)) {
+    list = list.filter((itemIdx) => itemIdx !== id);
+    console.log("Removed from list");
+  } else {
+    list.push(id);
+    console.log("Added to list");
+  }
+
+  localStorage.setItem(storageKey, JSON.stringify(list));
+  displayProverbs(proverbsList);
+}
+function showSavedOnly() {
+  const savedIds = JSON.parse(localStorage.getItem("savedProverbs") || "[]");
+  const filtered = proverbsList.filter((p) => savedIds.includes(p.id));
+  displayProverbs(filtered);
+}
